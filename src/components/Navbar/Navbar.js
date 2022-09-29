@@ -5,6 +5,7 @@ import {
     SettingOutlined,
 } from "@ant-design/icons";
 import { Menu } from "antd";
+import '../Navbar/navbar.css'
 import React, { useState } from "react";
 
 const items = [
