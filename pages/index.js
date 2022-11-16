@@ -3,6 +3,7 @@ import Image from "next/image";
 import About from "../components/About";
 import Header from "../components/Header";
 import styles from "../styles/Home.module.css";
+import Credits from "../components/Credits";
 
 export default function Home() {
     return (
@@ -14,11 +15,14 @@ export default function Home() {
             </Head>
 
             <main className={styles.main}>
-                <div>
+                <div className=''>
                     <Header />
                 </div>
                 <div>
                     <About />
+                </div>
+                <div>
+                    <Credits />
                 </div>
             </main>
 
