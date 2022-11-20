@@ -4,6 +4,8 @@ import About from "../components/About";
 import Header from "../components/Header";
 import styles from "../styles/Home.module.css";
 import Credits from "../components/Credits";
+import Music from "../components/Music";
+import Contact from "../components/Contact";
 
 export default function Home() {
     return (
@@ -17,12 +19,10 @@ export default function Home() {
             <main className={styles.main}>
                 <div className=''>
                     <Header />
-                </div>
-                <div>
                     <About />
-                </div>
-                <div>
                     <Credits />
+                    <Music />
+                    <Contact />
                 </div>
             </main>
 
