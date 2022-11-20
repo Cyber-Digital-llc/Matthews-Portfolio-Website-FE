@@ -33,7 +33,10 @@ function Navbar() {
         {items.map((item) => {
           return (
             <ul className="flex px-6" key={item.key}>
-              <li className="flex-row py-2 bg" key={item.key}>
+              <li
+                className="flex-row py-2 border-t-4 hover:border-t-sky-500"
+                key={item.key}
+              >
                 {item.label}
               </li>
             </ul>
