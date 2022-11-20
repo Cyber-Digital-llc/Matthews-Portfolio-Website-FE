@@ -29,12 +29,12 @@ function Navbar() {
   return (
     // NAVBAR
     <>
-      <div className="flex py-7 px-5 text-base">
+      <div className="flex py-7 px-5 text-base z-20 fixed top-0 left-0">
         {items.map((item) => {
           return (
             <ul className="flex px-6" key={item.key}>
               <li
-                className="flex-row py-2 border-t-4 hover:border-t-sky-500"
+                className="flex-row py-2 border-t-4 hover:border-t-red-500"
                 key={item.key}
               >
                 {item.label}
