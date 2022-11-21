@@ -4,9 +4,9 @@ import headShot from '../public/headshot1536x1536px.jpg'
 
 const About = () => {
   return (
-    <div className="flex h-max bg-slate-600 py-0 px-0 w-full items-center ">
-      <div className="flex justify-end w-full ">
-        <div className="flex w-[100%] ">
+    <div className="flex h-max bg-slate-900 py-0 px-0 w-full items-center ">
+      <div className="flex justify-end w-full">
+        <div className="flex w-[100%]">
           <Image
             draggable={false}
             src={headShot}
@@ -18,24 +18,26 @@ const About = () => {
       </div>
 
       <div className="flex w-full justify-start">
-        <div className=" px-6 py-4 w-[100%] ">
-          <h2 className="text-3xl py-3">About</h2>
-          <p className="text-6xl py-3">Matthew Hernandez</p>
-          <p className="py-3">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque
-            veniam consequatur dolorum recusandae corrupti voluptatem, obcaecati
-            enim consectetur quis autem ipsa quisquam accusantium dignissimos
-            aliquid cum totam, porro in ut.
-          </p>
-          <p className="py-3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ex,
-            voluptatibus accusantium rem cumque vitae non voluptas sapiente
-            expedita quisquam totam dolorum culpa alias minima ducimus
-            consequatur neque commodi accusamus?
-          </p>
-          <p className="py-3">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione.
-          </p>
+        <div className=" px-6 py-2 w-[100%] ">
+          <div className="w-[350px]">
+            <h2 className="text-3xl py-2">About</h2>
+            <p className="text-6xl py-2">Matthew Hernandez</p>
+            <p className="py-3">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque
+              veniam consequatur dolorum recusandae corrupti voluptatem,
+              obcaecati enim consectetur quis autem ipsa quisquam accusantium
+              dignissimos aliquid cum totam, porro in ut.
+            </p>
+            <p className="py-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ex,
+              voluptatibus accusantium rem cumque vitae non voluptas sapiente
+              expedita quisquam totam dolorum culpa alias minima ducimus
+              consequatur neque commodi accusamus?
+            </p>
+            <p className="py-3">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione.
+            </p>
+          </div>
         </div>
       </div>
     </div>
