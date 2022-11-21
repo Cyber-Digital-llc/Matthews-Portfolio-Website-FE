@@ -24,6 +24,7 @@ a {
         color-scheme: dark;
     }
     body {
+        font-size: 14px;
         color: white;
         background: black;
     }
