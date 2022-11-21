@@ -4,7 +4,7 @@ import Navbar from './Navbar'
 const Header = () => {
   return (
     <>
-      <div className=" bg-cover bg-center bg-headerBGI bg-fixed w-[100vw] h-[90vh] mx-auto  flex items-center justify-center ">
+      <div className=" bg-cover bg-center bg-headerBGI bg-fixed w-[100vw] h-[100vh] mx-auto flex items-center justify-center ">
         {/* <Navbar /> */}
         <div className="flex-col ">
           <h1 className="font-bold text-8xl ">Matthew Hernandez</h1>
