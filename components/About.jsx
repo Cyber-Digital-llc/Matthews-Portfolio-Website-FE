@@ -4,9 +4,9 @@ import headShot from '../public/headshot1536x1536px.jpg'
 
 const About = () => {
   return (
-    <div className="flex h-max bg-slate-900 py-0 px-0 w-full items-center ">
+    <div className="flex h-max bg-slate-900 py-0 px-0 w-full items-center border-t-[2rem] border-t-red-900">
       <div className="flex justify-end w-full">
-        <div className="flex w-[100%]">
+        <div className="flex w-full xs:w-full sm:w-full md:w-[50%] lg:w-[50%] xl:[50%]">
           <Image
             draggable={false}
             src={headShot}
@@ -18,10 +18,10 @@ const About = () => {
       </div>
 
       <div className="flex w-full justify-start">
-        <div className=" px-6 py-2 w-[100%] ">
-          <div className="w-[350px]">
-            <h2 className="text-3xl py-2">About</h2>
-            <p className="text-6xl py-2">Matthew Hernandez</p>
+        <div className=" px-6 py-0 w-[100%] ">
+          <div className="w-[350px] xs:w-full sm:w-full md:w-full lg:w-[50%] xl:[50%]">
+            <h2 className="text-3xl py-0">About</h2>
+            <p className="text-6xl py-0">Matthew Hernandez</p>
             <p className="py-3">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque
               veniam consequatur dolorum recusandae corrupti voluptatem,
