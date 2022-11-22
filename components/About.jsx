@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div className="flex h-max bg-slate-900 py-0 px-0 w-full items-center border-t-[2rem] border-t-red-900">
       <div className="flex justify-end w-full">
-        <div className="flex w-full xs:w-full sm:w-full md:w-[50%] lg:w-[50%] xl:[50%]">
+        <div className="flex w-full xs:w-full sm:w-full md:w-[50%] ">
           <Image
             draggable={false}
             src={headShot}

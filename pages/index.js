@@ -16,7 +16,7 @@ export default function Home() {
                 <link rel='icon' href='/favicon.ico' />
             </Head>
 
-            <main className={styles.main}>
+            <main className='flex flex-1 min-h-[100vh] justify-center'>
                 <div className=''>
                     <Header />
                     <About />
