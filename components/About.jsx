@@ -5,8 +5,8 @@ import headShot from '../public/headshot1536x1536px.jpg'
 const About = () => {
   return (
     <div className="flex h-[75vh] w-full bg-slate-900 py-0 px-0 items-center border-t-[2rem] border-t-red-900">
-      <div className="flex justify-end w-full h-[100%] xl:max-h-screen-xl xl:max-w-screen-xl">
-        <div className=" flex justify-end xl:w-[80%] ">
+      <div className="flex justify-end w-full h-[100%] ">
+        <div className=" flex justify-end ">
           <Image
             draggable={false}
             src={headShot}
@@ -17,7 +17,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="flex w-full xl:w-[100vw] ">
+      <div className="flex w-full ">
         <div className="flex justify-start px-14 ">
           <div className="w-[60%] ">
             <h2 className="text-2xl  max-w-prose">About</h2>

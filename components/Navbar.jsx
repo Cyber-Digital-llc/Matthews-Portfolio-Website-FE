@@ -34,7 +34,7 @@ function Navbar() {
           <div className="flex items-center justify-between h-16">
             {items.map((item) => {
               return (
-                <ul className="flex py-2 px-6" key={item.key}>
+                <ul className="flex py-2 px-6 " key={item.key}>
                   <li
                     className="flex-row border-t-4 hover:border-t-red-500"
                     key={item.key}
