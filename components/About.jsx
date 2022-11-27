@@ -4,7 +4,10 @@ import headShot from '../public/headshot1536x1536px.jpg'
 
 const About = () => {
   return (
-    <div className="flex h-[75vh] w-full bg-slate-900 py-0 px-0 items-center border-t-[2rem] border-t-red-900">
+    <div
+      id="about"
+      className="flex h-[75vh] w-full bg-slate-900 py-0 px-0 items-center border-t-[2rem] border-t-red-900"
+    >
       <div className="flex justify-end w-full h-[100%] ">
         <div className=" flex justify-end ">
           <Image
