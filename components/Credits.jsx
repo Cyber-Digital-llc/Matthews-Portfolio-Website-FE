@@ -8,7 +8,7 @@ const Credits = () => {
       className="flex h-max bg-black-900 py-0 px-0 w-full items-center "
     >
       <div className="flex justify-center w-full">
-        <div className=" w-[60%] py-14">
+        <div className=" py-14 mx-[30%]">
           <h2 className="text-3xl py-2">Selected</h2>
           <p className="text-6xl py-2">Credits</p>
           <p className="py-3 max-w-prose">
@@ -29,8 +29,8 @@ const Credits = () => {
         </div>
       </div>
 
-      <div className="flex justify-end w-full h-[full]">
-        <div className="flex h-[100%]">
+      <div className="flex justify-end w-full h-[full] ">
+        <div className="flex h-[65vh]">
           <Image
             draggable={false}
             src={CreditsImg}
