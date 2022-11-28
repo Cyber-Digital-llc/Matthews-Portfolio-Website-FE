@@ -9,6 +9,7 @@ module.exports = {
         extend: {
             backgroundImage: {
                 headerBGI: "url('/heroBGcopy.jpg')",
+                musicBGI: "url('/1479x1536px.jpg')",
             },
         },
     },
