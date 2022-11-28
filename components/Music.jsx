@@ -8,17 +8,7 @@ const Music = () => {
       className="flex h-max bg-black-900 py-0 px-0 w-full items-center "
     >
       <div className="w-full">
-        <div className="flex justify-center w-full bg-musicBGI h-[90vh] bg-contain bg-fixed mx-auto">
-          {/* <div className="flex h-[90vh] bg-cover bg-center bg-fixed mx-auto "> */}
-          {/* <Image
-            draggable={false}
-            src={analogImg}
-            alt="headshot image of matthew"
-            // objectPosition="fixed"
-            quality={100}
-          /> */}
-          {/* </div> */}
-        </div>
+        <div className="flex justify-center w-full bg-musicBGI h-[90vh] bg-contain bg-fixed mx-auto"></div>
       </div>
 
       <div className="flex justify-center w-full">
