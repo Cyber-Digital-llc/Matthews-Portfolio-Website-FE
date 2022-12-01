@@ -5,40 +5,32 @@ const Credits = () => {
   return (
     <div
       id="credits"
-      className="flex h-max bg-black-900 py-0 px-0 w-full items-center "
+      className="flex justify-center h-[65vh] bg-black-900 py-0 px-0 w-full items-center "
     >
-      <div className="flex justify-center w-full">
-        <div className=" py-14 mx-[30%]">
+      <div className="flex px-0 justify-center w-full h-max">
+        <div className="  mx-[30%]">
           <h2 className="text-3xl py-2">Selected</h2>
           <p className="text-6xl py-2">Credits</p>
           <p className="py-3 max-w-prose">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque
-            veniam consequatur dolorum recusandae corrupti voluptatem, obcaecati
-            enim consectetur quis autem ipsa quisquam accusantium dignissimos
-            aliquid cum totam, porro in ut.
           </p>
           <p className="py-3 max-w-prose">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ex,
-            voluptatibus accusantium rem cumque vitae non voluptas sapiente
-            expedita quisquam totam dolorum culpa alias minima ducimus
-            consequatur neque commodi accusamus?
           </p>
           <p className="py-3 max-w-prose">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione.
           </p>
+          <p className="py-3 max-w-prose">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione.
+          </p>
+          <button className="px-0 py-0 my-4 bg-red-900 h-12 w-[220px]">
+            Download Full Bio (PDF)
+          </button>
         </div>
       </div>
 
-      <div className="flex justify-end w-full h-[full] ">
-        <div className="flex h-[65vh]">
-          <Image
-            draggable={false}
-            src={CreditsImg}
-            alt="headshot image of matthew"
-            // objectPosition=""
-            quality={100}
-          />
-        </div>
+      <div className="w-full h-full">
+        <div className="flex justify-center w-full bg-creditsBGI h-full bg-center bg-cover bg-local mx-auto"></div>
       </div>
     </div>
   )

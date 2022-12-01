@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import analogImg from '../public/1479x1536px.jpg'
+
 const Music = () => {
   return (
     <div
