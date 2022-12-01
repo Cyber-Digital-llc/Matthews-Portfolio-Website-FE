@@ -10,8 +10,13 @@ module.exports = {
             backgroundImage: {
                 headerBGI: "url('/heroBGcopy.jpg')",
                 musicBGI: "url('/1479x1536px.jpg')",
+                headShotBGI: "url('/headshot1536x1536px.jpg')",
+                creditsBGI: "url('/2304x1000px.jpg')",
             },
         },
     },
-    plugins: [],
+    corePlugins: {
+        aspectRatio: false,
+    },
+    plugins: [require("@tailwindcss/aspect-ratio")],
 };
