@@ -2,7 +2,10 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div className=" flex w-full justify-center align-middle content-center items-center">
+    <div
+      id="contact"
+      className=" flex w-full justify-center align-middle content-center items-center"
+    >
       <div className="flex justify-center w-full">
         <div className=" py-10 px-10">
           <h2>Matthew Hernandez</h2>
