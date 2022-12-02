@@ -12,6 +12,7 @@ const Contact = () => {
           <p>FILM/GAME COMPOSE</p>
           <p>Office:</p>
           <p>Phone Number:</p>
+          <p>Direct Email: </p>
         </div>
 
         <form className="w-full max-w-lg">
