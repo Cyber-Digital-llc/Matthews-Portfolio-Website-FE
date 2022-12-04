@@ -9,7 +9,7 @@ const Contact = () => {
       <div className="flex justify-center w-full">
         <div className=" py-10 px-10">
           <h2>Matthew Hernandez</h2>
-          <p>FILM/GAME COMPOSE</p>
+          <p className="">FILM/GAME COMPOSE</p>
           <p>Office:</p>
           <p>Phone Number:</p>
           <p>Direct Email: </p>
