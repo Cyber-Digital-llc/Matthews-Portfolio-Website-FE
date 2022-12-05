@@ -28,18 +28,13 @@ export default function Home() {
 
             <footer className='flex justify-center bg-red-900'>
                 <a
-                    href='https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app'
+                    href='https://cyberdigitalllc.com'
                     target='_blank'
                     rel='noopener noreferrer'
                 >
-                    Powered by{" "}
+                    Created by{" "}
                     <span className={styles.logo}>
-                        <Image
-                            src='/vercel.svg'
-                            alt='Vercel Logo'
-                            width={72}
-                            height={16}
-                        />
+                        <h2>CYBER DIGITAL, llc</h2>
                     </span>
                 </a>
             </footer>
