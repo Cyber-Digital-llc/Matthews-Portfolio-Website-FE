@@ -66,9 +66,6 @@ const Contact = () => {
                 type="email"
                 required
               />
-              {/* <p className="text-gray-600 text-xs italic">
-                Some tips - as long as needed
-              </p> */}
             </div>
           </div>
           <div className="flex flex-wrap -mx-3 mb-6">

@@ -30,7 +30,6 @@ const items = [
 
 function GlobalNavBar() {
   return (
-    // GlobalNavBar
     <>
       <div className="flex py-7 px-5 text-base z-20 fixed top-0 left-0 justify-start">
         <div className="max-w-5xl mx-auto px-4">
