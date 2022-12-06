@@ -1,4 +1,3 @@
-import Navbar from './Navbar'
 import GlobalNavBar from './GlobalNavbar'
 
 export const Layout = ({ children }) => {

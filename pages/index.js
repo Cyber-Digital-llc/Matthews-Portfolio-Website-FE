@@ -6,7 +6,7 @@ import styles from "../styles/Home.module.css";
 import Credits from "../components/Credits";
 import Music from "../components/Music";
 import Contact from "../components/Contact";
-import Navbar from "../components/Navbar";
+import GlobalNavBar from "../components/GlobalNavbar";
 
 export default function Home() {
     return (
@@ -19,7 +19,7 @@ export default function Home() {
 
             <main className='flex flex-1 min-h-[100vh] justify-center'>
                 <div className=''>
-                    <Navbar />
+                    <GlobalNavBar />
                     <Header />
                     <About />
                     <Credits />

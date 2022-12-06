@@ -6,15 +6,31 @@ const items = [
     label: 'HOME',
     linkURL: '/',
   },
-  // {
-  //   label: 'EPK',
-  //   linkURL: '/electronicPressKit',
-  // },
+  {
+    label: 'ABOUT',
+    linkURL: '/#about',
+  },
+  {
+    label: 'CREDITS',
+    linkURL: '/#credits',
+  },
+  {
+    label: 'MUSIC',
+    linkURL: '/#music',
+  },
+  {
+    label: 'CONTACT',
+    linkURL: '/#contact',
+  },
+  {
+    label: 'EPK',
+    linkURL: '/electronicPressKit',
+  },
 ]
 
-function Navbar() {
+function GlobalNavBar() {
   return (
-    // NAVBAR
+    // GlobalNavBar
     <>
       <div className="flex py-7 px-5 text-base z-20 fixed top-0 left-0 justify-start">
         <div className="max-w-5xl mx-auto px-4">
@@ -38,4 +54,4 @@ function Navbar() {
   )
 }
 
-export default Navbar
+export default GlobalNavBar
