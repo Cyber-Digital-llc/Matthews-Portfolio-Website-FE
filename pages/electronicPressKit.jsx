@@ -1,11 +1,12 @@
 import React from 'react'
-import Navbar from '../../components/Navbar'
+import GlobalNavBar from '../components/GlobalNavbar'
 
 const ElectronicPressKit = () => {
   return (
     <div>
-      <Navbar />
-      <h2>ElectronicPressKit</h2>
+      <h2 className="flex justify-center align-middle bg-slate-400">
+        ElectronicPressKit
+      </h2>
     </div>
   )
 }

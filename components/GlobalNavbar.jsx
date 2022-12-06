@@ -7,24 +7,8 @@ const items = [
     linkURL: '/',
   },
   {
-    label: 'ABOUT',
-    linkURL: '#about',
-  },
-  {
     label: 'EPK',
     linkURL: '/electronicPressKit',
-  },
-  {
-    label: 'CREDITS',
-    linkURL: '#credits',
-  },
-  {
-    label: 'MUSIC',
-    linkURL: '#music',
-  },
-  {
-    label: 'CONTACT',
-    linkURL: '#contact',
   },
 ]
 
