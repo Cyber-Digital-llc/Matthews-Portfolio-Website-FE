@@ -11,10 +11,6 @@ const items = [
     linkURL: '#about',
   },
   {
-    label: 'EPK',
-    linkURL: '/electronicPressKit',
-  },
-  {
     label: 'CREDITS',
     linkURL: '#credits',
   },
@@ -25,6 +21,10 @@ const items = [
   {
     label: 'CONTACT',
     linkURL: '#contact',
+  },
+  {
+    label: 'EPK',
+    linkURL: '/electronicPressKit',
   },
 ]
 

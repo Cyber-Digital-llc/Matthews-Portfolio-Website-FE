@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }) {
     return (
         <div>
             {/* <Navbar /> */}
-            <GlobalNavBar />
+            {/* <GlobalNavBar /> */}
             <Component {...pageProps} />
         </div>
     );

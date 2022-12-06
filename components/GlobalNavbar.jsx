@@ -6,10 +6,10 @@ const items = [
     label: 'HOME',
     linkURL: '/',
   },
-  {
-    label: 'EPK',
-    linkURL: '/electronicPressKit',
-  },
+  // {
+  //   label: 'EPK',
+  //   linkURL: '/electronicPressKit',
+  // },
 ]
 
 function Navbar() {
