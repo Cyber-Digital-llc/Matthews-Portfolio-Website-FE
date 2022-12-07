@@ -36,7 +36,7 @@ export default function Home() {
                 >
                     Created by{" "}
                     <span className={styles.logo}>
-                        <h2>CYBER DIGITAL, llc</h2>
+                        <h2>Cyber Digital, llc</h2>
                     </span>
                 </a>
             </footer>
