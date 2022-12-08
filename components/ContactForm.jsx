@@ -6,7 +6,7 @@ export default function ContactForm() {
   const {
     register,
     handleSubmit,
-    // reset,
+    reset,
     formState: { isSubmitting, errors },
   } = useForm()
 
@@ -23,6 +23,7 @@ export default function ContactForm() {
         )
       })
       .catch((e) => console.error(e))
+      .finally(reset())
   }
 
   return (
