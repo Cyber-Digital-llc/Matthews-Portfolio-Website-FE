@@ -7,6 +7,7 @@ import Credits from "../components/Credits";
 import Music from "../components/Music";
 import Contact from "../components/Contact";
 import GlobalNavBar from "../components/GlobalNavbar";
+import ContactForm from "../components/ContactForm";
 
 export default function Home() {
     return (
@@ -25,6 +26,7 @@ export default function Home() {
                     <Credits />
                     <Music />
                     <Contact />
+                    <ContactForm />
                 </div>
             </main>
 
