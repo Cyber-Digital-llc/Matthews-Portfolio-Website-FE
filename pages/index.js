@@ -5,7 +5,7 @@ import Header from "../components/Header";
 import styles from "../styles/Home.module.css";
 import Credits from "../components/Credits";
 import Music from "../components/Music";
-import Contact from "../components/Contact";
+// import Contact from "../components/Contact";
 import GlobalNavBar from "../components/GlobalNavbar";
 import ContactForm from "../components/ContactForm";
 
@@ -25,7 +25,7 @@ export default function Home() {
                     <About />
                     <Credits />
                     <Music />
-                    <Contact />
+                    {/* <Contact /> */}
                     <ContactForm />
                 </div>
             </main>

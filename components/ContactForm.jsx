@@ -15,7 +15,6 @@ export default function ContactForm() {
   function onSubmit(data) {
     axios
       .post('/api/contact', data)
-
       .then((response) => {
         console.log(data)
         setSuccessMessage(
@@ -61,7 +60,7 @@ export default function ContactForm() {
                 })}
                 placeholder="First Name"
               />
-              <p>{errors.firstName?.message}</p>
+              <p className="text-red-600">{errors.firstName?.message}</p>
             </div>
             <div className="w-full md:w-1/2 px-3">
               <label
@@ -79,7 +78,7 @@ export default function ContactForm() {
                 })}
                 placeholder="Last Name"
               />
-              <p>{errors.lastName?.message}</p>
+              <p className="text-red-600">{errors.lastName?.message}</p>
             </div>
           </div>
 
@@ -100,7 +99,7 @@ export default function ContactForm() {
                 })}
                 placeholder="Email"
               />
-              <p>{errors.email?.message}</p>
+              <p className="text-red-600">{errors.email?.message}</p>
             </div>
           </div>
           <div className="flex flex-wrap -mx-3 mb-6">
@@ -120,13 +119,13 @@ export default function ContactForm() {
                 })}
                 placeholder="Message"
               />
-              <p>{errors.message?.message}</p>
+              <p className="text-red-600">{errors.message?.message}</p>
             </div>
           </div>
           <div className="md:flex md:items-center">
             <div className="md:w-1/3"></div>
             <button
-              className="shadow bg-teal-400 hover:bg-teal-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+              className="shadow bg-slate-600 hover:bg-slate-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
               role="submit"
             >
               {isSubmitting ? 'Submitting' : 'Submit'}
