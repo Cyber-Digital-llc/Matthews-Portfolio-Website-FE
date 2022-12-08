@@ -6,6 +6,7 @@ export default function ContactForm() {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { isSubmitting, errors },
   } = useForm()
 
@@ -22,7 +23,6 @@ export default function ContactForm() {
         )
       })
       .catch((e) => console.error(e))
-    r
   }
 
   return (
@@ -126,6 +126,9 @@ export default function ContactForm() {
           <div className="md:flex md:items-center">
             <div className="md:w-1/3"></div>
             <button
+              onClick={() => {
+                reset()
+              }}
               className="shadow bg-slate-600 hover:bg-slate-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
               role="submit"
             >
