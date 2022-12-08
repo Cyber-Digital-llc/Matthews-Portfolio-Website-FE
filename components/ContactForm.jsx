@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import axios from 'axios'
-import { useForm } from 'react-hook-form'
+import { useForm, reset } from 'react-hook-form'
 
 export default function ContactForm() {
   const {
@@ -22,6 +22,7 @@ export default function ContactForm() {
         )
       })
       .catch((e) => console.error(e))
+    r
   }
 
   return (
@@ -131,8 +132,7 @@ export default function ContactForm() {
               {isSubmitting ? 'Submitting' : 'Submit'}
             </button>
           </div>
-          <div className="md:w-2/3">
-            {' '}
+          <div className="px-10 py-10">
             {successMessage && <p>{successMessage}</p>}
           </div>
         </form>
