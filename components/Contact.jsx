@@ -52,11 +52,12 @@ const Contact = () => {
               />
             </div>
           </div>
+
           <div className="flex flex-wrap -mx-3 mb-6">
             <div className="w-full px-3">
               <label
                 className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                for="password"
+                for="email"
               >
                 E-mail
               </label>
@@ -72,7 +73,7 @@ const Contact = () => {
             <div className="w-full px-3">
               <label
                 className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                for="password"
+                for="message"
               >
                 Message
               </label>
@@ -87,6 +88,7 @@ const Contact = () => {
               </p>
             </div>
           </div>
+
           <div className="md:flex md:items-center">
             <div className="md:w-1/3">
               <button
