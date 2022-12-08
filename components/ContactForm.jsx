@@ -48,7 +48,7 @@ export default function ContactForm() {
             <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
               <label
                 className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                for="first-name"
+                htmlFor="first-name"
               >
                 First Name
               </label>
@@ -66,7 +66,7 @@ export default function ContactForm() {
             <div className="w-full md:w-1/2 px-3">
               <label
                 className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                for="last-name"
+                htmlFor="last-name"
               >
                 Last Name
               </label>
@@ -86,7 +86,7 @@ export default function ContactForm() {
             <div className="w-full px-3">
               <label
                 className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                for="email"
+                htmlFor="email"
               >
                 E-mail
               </label>
@@ -105,7 +105,7 @@ export default function ContactForm() {
             <div className="w-full px-3">
               <label
                 className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                for="message"
+                htmlFor="message"
               >
                 Message
               </label>
