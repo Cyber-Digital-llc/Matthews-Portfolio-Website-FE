@@ -60,7 +60,6 @@ export default function ContactForm() {
                   required: 'Required. Please enter your first name.',
                   minLength: 2,
                 })}
-                placeholder="First Name"
               />
               <p className="text-red-600">{errors.firstName?.message}</p>
             </div>
@@ -78,7 +77,6 @@ export default function ContactForm() {
                 {...register('lastName', {
                   required: 'Required. Please enter your last name.',
                 })}
-                placeholder="Last Name"
               />
               <p className="text-red-600">{errors.lastName?.message}</p>
             </div>
@@ -99,7 +97,6 @@ export default function ContactForm() {
                 {...register('email', {
                   required: 'Required. Please enter your email address.',
                 })}
-                placeholder="Email"
               />
               <p className="text-red-600">{errors.email?.message}</p>
             </div>
@@ -119,7 +116,6 @@ export default function ContactForm() {
                 {...register('message', {
                   required: 'Required. Please enter your message.',
                 })}
-                placeholder="Message"
               />
               <p className="text-red-600">{errors.message?.message}</p>
             </div>
@@ -127,9 +123,6 @@ export default function ContactForm() {
           <div className="md:flex md:items-center">
             <div className="md:w-1/3"></div>
             <button
-              // onClick={() => {
-              //   reset()
-              // }}
               className="shadow bg-slate-600 hover:bg-slate-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
               role="submit"
             >
