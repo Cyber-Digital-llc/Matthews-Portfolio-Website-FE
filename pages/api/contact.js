@@ -7,7 +7,7 @@ export default function (req, res) {
         service: "gmail",
         auth: {
             user: process.env.DUMMY_ADDRESS,
-            pass: process.env.PASSWORD,
+            PASSWORD,
         },
         secure: true,
     });
