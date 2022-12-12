@@ -11,7 +11,7 @@ import ContactForm from "../components/ContactForm";
 
 export default function Home() {
     return (
-        <div className={styles.container}>
+        <div className='min-h-max relative mx-auto max-w-[2000px]'>
             <Head>
                 <title>Matthew Hernandez</title>
                 <meta name='description' content='Film & Game Composer' />
