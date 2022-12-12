@@ -40,7 +40,7 @@ const Music = () => {
             <a
               href="https://soundcloud.com/higgsbosonfrequency"
               title="Thom Herz"
-              target="_blank"
+              // target="_blank"
               style={{ color: '#cccccc', textDecoration: 'none' }}
             >
               Thom Herz
@@ -49,7 +49,7 @@ const Music = () => {
             <a
               href="https://soundcloud.com/higgsbosonfrequency/fortuna"
               title="Fortuna (Prod Ionizing Frequency)"
-              target="_blank"
+              // target="_blank"
               style={{ color: '#cccccc', textDecoration: 'none' }}
             >
               Fortuna (Prod Ionizing Frequency)
