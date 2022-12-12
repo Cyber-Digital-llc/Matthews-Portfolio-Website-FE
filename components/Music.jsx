@@ -15,12 +15,46 @@ const Music = () => {
         <div className=" py-14 mx-[30%]">
           <p className="text-6xl py-2">MUSIC</p>
           <h2 className="text-3xl py-2">RECENT WORK</h2>
-          <p className="py-3 max-w-prose">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque
-            veniam consequatur dolorum recusandae corrupti voluptatem, obcaecati
-            enim consectetur quis autem ipsa quisquam accusantium dignissimos
-            aliquid cum totam, porro in ut.
-          </p>
+          <iframe
+            width="100%"
+            height="300"
+            scrolling="no"
+            frameborder="no"
+            allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/307179972&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+          ></iframe>
+          <div
+            style={{
+              fontSize: '10px',
+              color: ' #cccccc',
+              lineBreak: 'anywhere',
+              wordBreak: 'normal',
+              overflow: 'hidden',
+              whiteSpace: 'nowrap',
+              textOverflow: 'ellipsis',
+              fontFamily:
+                'Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif',
+              fontWeight: '100',
+            }}
+          >
+            <a
+              href="https://soundcloud.com/higgsbosonfrequency"
+              title="Thom Herz"
+              target="_blank"
+              style={{ color: '#cccccc', textDecoration: 'none' }}
+            >
+              Thom Herz
+            </a>{' '}
+            ·{' '}
+            <a
+              href="https://soundcloud.com/higgsbosonfrequency/fortuna"
+              title="Fortuna (Prod Ionizing Frequency)"
+              target="_blank"
+              style={{ color: '#cccccc', textDecoration: 'none' }}
+            >
+              Fortuna (Prod Ionizing Frequency)
+            </a>
+          </div>
           <p className="py-3 max-w-prose">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ex,
             voluptatibus accusantium rem cumque vitae non voluptas sapiente

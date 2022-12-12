@@ -17,6 +17,7 @@ export default function ContactForm() {
     axios
       .post('/api/contact', data)
       .then((response) => {
+        console.log('response', response)
         console.log(data)
         setSuccessMessage(
           `Thanks for contacting me! I'll reach back ASAP, look in your inbox for updates 😊`,
