@@ -11,7 +11,7 @@ import ContactForm from "../components/ContactForm";
 
 export default function Home() {
     return (
-        <div className='min-h-max relative mx-auto max-w-[2000px]'>
+        <div className='min-h-max relative mx-auto px-0 py-0 max-w-[2000px] w-[100vw]'>
             <Head>
                 <title>Matthew Hernandez</title>
                 <meta name='description' content='Film & Game Composer' />
@@ -30,7 +30,7 @@ export default function Home() {
                 </div>
             </main>
 
-            <footer className='flex justify-center bg-red-900'>
+            <footer className='flex justify-center bg-red-900 '>
                 <a
                     href='https://cyberdigitalllc.com'
                     target='_blank'
