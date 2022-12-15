@@ -1,6 +1,6 @@
-require('dotenv').config()
-const PASSWORD = process.env.PASSWORD
 export default function (req, res) {
+  require('dotenv').config()
+  const PASSWORD = process.env.PASSWORD
   console.log(req.body)
   let nodemailer = require('nodemailer')
   const transporter = nodemailer.createTransport({
