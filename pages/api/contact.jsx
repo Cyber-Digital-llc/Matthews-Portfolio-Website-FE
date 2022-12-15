@@ -1,4 +1,4 @@
-export default function Contact(req, res) {
+export default function (req, res) {
   require('dotenv').config()
   const PASSWORD = process.env.PASSWORD
   console.log(req.body)
