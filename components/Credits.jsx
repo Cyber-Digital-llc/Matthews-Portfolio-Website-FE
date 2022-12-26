@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import CreditsImg from '../public/2304x1000px.jpg'
+
 const Credits = () => {
   return (
     <div
