@@ -9,6 +9,7 @@
         "lint": "next lint"
     },
     "dependencies": {
+        "@react-spring/web": "^9.6.1",
         "@tailwindcss/aspect-ratio": "^0.4.2",
         "axios": "^1.2.1",
         "dotenv": "^16.0.3",
