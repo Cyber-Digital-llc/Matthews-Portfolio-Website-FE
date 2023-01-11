@@ -5,7 +5,7 @@ const Credits = () => {
   return (
     <div
       id="credits"
-      className="flex justify-center h-[65vh] bg-black-900 py-0 px-0 w-full items-center "
+      className="flex-col justify-center xxs:flex-col xs:flex-col sm:flex xl:flex xl:h-[65vh] xl:flex-row xl:w-full lg:flex lg:flex-row lg:h-max  bg-black-900 py-0 px-0 w-full items-center "
     >
       <div className="flex px-0 justify-center w-full h-max">
         <div className="  mx-[30%]">
