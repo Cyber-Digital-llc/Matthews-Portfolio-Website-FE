@@ -31,8 +31,8 @@ const Credits = () => {
         </div>
       </div>
 
-      <div className="w-full">
-        <div className="flex justify-center w-full bg-creditsBGI h-96 xl:h-[90vh] bg-no-repeat bg-contain bg-scroll mx-auto bg-center"></div>
+      <div className="flex w-full h-full xl:flex lg:h-full xl:h-full xl:align-middle xl:items-center ">
+        <div className="flex justify-center w-full bg-creditsBGI h-[300px] lg:h-[90vh] xl:h-[90vh] bg-no-repeat bg-contain bg-scroll mx-auto bg-center"></div>
       </div>
     </div>
     // <div
