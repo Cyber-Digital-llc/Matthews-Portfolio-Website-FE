@@ -4,15 +4,15 @@ const About = () => {
   return (
     <div
       id="about"
-      className="flex-col align-middle xxs:flex-col xs:flex-col xl:flex xl:flex-row xl:w-full lg:flex lg:flex-row lg:h-max md:flex md:h-max sm:flex sm:flex-row sm:h-max py-0 px-0 w-full sm:items-center  border-t-[2rem] border-t-red-900"
+      className="flex flex-col align-middle xxs:flex-col xs:flex-col xl:flex xl:flex-row xl:w-full lg:flex lg:flex-row lg:h-max md:flex md:h-max sm:flex sm:flex-row sm:h-max py-0 px-0 w-full sm:items-center  border-t-[2rem] border-t-red-900"
     >
       <div className="w-full">
-        <div className="flex justify-center w-full bg-headShotBGI h-[90vh] bg-cover bg-scroll mx-auto"></div>
+        <div className="flex justify-center w-full bg-headShotBGI xl:h-[90vh] h-96 bg-cover bg-scroll mx-auto"></div>
       </div>
 
       <div className="flex w-full justify-center ">
         <div className="flex justify-center mx-auto px-0 lg:justify-start lg:px-14 md:justify-start md:px-14 xl:justify-start xl:px-14 ">
-          <div className="w-[60%] ">
+          <div className="w-[65%] ">
             <h2 className="text-2xl  max-w-prose">About</h2>
             <p className="text-5xl py-0 max-w-prose">Matthew Hernandez</p>
             <p className="py-3 max-w-prose">
