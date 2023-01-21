@@ -11,7 +11,7 @@ const About = () => {
       </div>
 
       <div className="flex w-full justify-center ">
-        <div className="flex justify-center mx-auto px-0 lg:justify-start lg:px-14 md:justify-start md:px-14 xl:justify-start xl:px-14 ">
+        <div className="flex justify-center mx-auto py-[3%] lg:justify-start lg:px-14 md:justify-start md:px-14 xl:justify-start xl:px-14 ">
           <div className="w-[65%] ">
             <h2 className="text-2xl  max-w-prose">About</h2>
             <p className="text-5xl py-0 max-w-prose">Matthew Hernandez</p>
