@@ -5,14 +5,14 @@ const Music = () => {
   return (
     <div
       id="music"
-      className="flex h-max bg-black-900 py-0 px-0 w-full items-center "
+      className="flex flex-col-reverse xxs:flex xxs:flex-col-reverse sm:flex sm:flex-col-reverse xl:flex xl:flex-row h-max bg-black-900 py-0 px-0 w-full items-center"
     >
       <div className="w-full">
-        <div className="flex justify-center w-full bg-musicBGI h-[90vh] bg-contain bg-fixed mx-auto"></div>
+        <div className="flex justify-center w-full bg-musicBGI h-[90vh] bg-contain bg-fixed mx-auto bg-no-repeat "></div>
       </div>
 
       <div className="flex justify-center w-full">
-        <div className=" py-14 mx-[30%]">
+        <div className=" py-14 mx-[10%]">
           <p className="text-6xl py-2">MUSIC</p>
           <h2 className="text-3xl py-2">RECENT WORK</h2>
           <iframe

@@ -5,7 +5,7 @@ const Credits = () => {
   return (
     <div
       id="credits"
-      className="flex flex-col-reverse align-middle xxs:flex-col xs:flex-col xl:flex xl:flex-row xl:w-full xl:h-[50vh] lg:flex lg:flex-row lg:h-max md:flex md:h-max sm:flex sm:flex-row sm:h-max py-0 px-0 w-full sm:items-center  "
+      className="flex flex-col-reverse align-middle xxs:flex-col xs:flex-col xl:flex xl:flex-row xl:w-full xl:h-[50vh] lg:flex lg:flex-row lg:h-max md:flex md:h-max sm:flex sm:flex-row sm:h-max py-0 px-0 w-full sm:items-center"
     >
       <div className="flex w-full justify-center ">
         <div className="flex justify-center mx-auto px-0 lg:justify-start lg:px-14 md:justify-start md:px-14 xl:justify-start xl:px-14 ">
