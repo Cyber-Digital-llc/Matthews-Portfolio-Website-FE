@@ -30,7 +30,7 @@ export default function ContactForm() {
   return (
     <div
       id="contact"
-      className=" flex w-full py-14 justify-center align-middle content-center items-center"
+      className=" flex flex-col w-full py-14 justify-center align-middle content-center items-center"
     >
       <div className="flex justify-center w-full">
         <div className=" py-10 px-10">
@@ -40,100 +40,101 @@ export default function ContactForm() {
           <p>Phone Number:</p>
           <p>Direct Email: </p>
         </div>
+        <div className="flex flex-col ">
+          <form className="w-full max-w-lg" onSubmit={handleSubmit(onSubmit)}>
+            <h2 className="items-center content-center align-middle flex justify-center py-10">
+              GET IN TOUCH
+            </h2>
+            <div className="flex flex-wrap -mx-3 mb-6">
+              <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                <label
+                  className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                  htmlFor="first-name"
+                >
+                  First Name
+                </label>
+                <input
+                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                  type="text"
+                  name="firstName"
+                  {...register('firstName', {
+                    required: 'Required. Please enter your first name.',
+                    minLength: 2,
+                  })}
+                />
+                <p className="text-red-600">{errors.firstName?.message}</p>
+              </div>
+              <div className="w-full md:w-1/2 px-3">
+                <label
+                  className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                  htmlFor="last-name"
+                >
+                  Last Name
+                </label>
+                <input
+                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  type="text"
+                  name="lastName"
+                  {...register('lastName', {
+                    required: 'Required. Please enter your last name.',
+                  })}
+                />
+                <p className="text-red-600">{errors.lastName?.message}</p>
+              </div>
+            </div>
 
-        <form className="w-full max-w-lg" onSubmit={handleSubmit(onSubmit)}>
-          <h2 className="items-center content-center align-middle flex justify-center py-10">
-            GET IN TOUCH
-          </h2>
-          <div className="flex flex-wrap -mx-3 mb-6">
-            <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-              <label
-                className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                htmlFor="first-name"
-              >
-                First Name
-              </label>
-              <input
-                className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-                type="text"
-                name="firstName"
-                {...register('firstName', {
-                  required: 'Required. Please enter your first name.',
-                  minLength: 2,
-                })}
-              />
-              <p className="text-red-600">{errors.firstName?.message}</p>
+            <div className="flex flex-wrap -mx-3 mb-6">
+              <div className="w-full px-3">
+                <label
+                  className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                  htmlFor="email"
+                >
+                  E-mail
+                </label>
+                <input
+                  className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                  type="email"
+                  name="email"
+                  {...register('email', {
+                    required: 'Required. Please enter your email address.',
+                  })}
+                />
+                <p className="text-red-600">{errors.email?.message}</p>
+              </div>
             </div>
-            <div className="w-full md:w-1/2 px-3">
-              <label
-                className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                htmlFor="last-name"
-              >
-                Last Name
-              </label>
-              <input
-                className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                type="text"
-                name="lastName"
-                {...register('lastName', {
-                  required: 'Required. Please enter your last name.',
-                })}
-              />
-              <p className="text-red-600">{errors.lastName?.message}</p>
+            <div className="flex flex-wrap -mx-3 mb-6">
+              <div className="w-full px-3">
+                <label
+                  className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                  htmlFor="message"
+                >
+                  Message
+                </label>
+                <input
+                  className=" no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none"
+                  type="text"
+                  name="message"
+                  {...register('message', {
+                    required: 'Required. Please enter your message.',
+                  })}
+                />
+                <p className="text-red-600">{errors.message?.message}</p>
+              </div>
             </div>
-          </div>
-
-          <div className="flex flex-wrap -mx-3 mb-6">
-            <div className="w-full px-3">
-              <label
-                className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                htmlFor="email"
+            <div className="md:flex md:items-center">
+              <div className="md:w-1/3"></div>
+              <button
+                className="shadow bg-slate-600 hover:bg-slate-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+                role="submit"
               >
-                E-mail
-              </label>
-              <input
-                className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                type="email"
-                name="email"
-                {...register('email', {
-                  required: 'Required. Please enter your email address.',
-                })}
-              />
-              <p className="text-red-600">{errors.email?.message}</p>
+                {isSubmitting ? 'Submitting' : 'Submit'}
+              </button>
             </div>
-          </div>
-          <div className="flex flex-wrap -mx-3 mb-6">
-            <div className="w-full px-3">
-              <label
-                className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                htmlFor="message"
-              >
-                Message
-              </label>
-              <input
-                className=" no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none"
-                type="text"
-                name="message"
-                {...register('message', {
-                  required: 'Required. Please enter your message.',
-                })}
-              />
-              <p className="text-red-600">{errors.message?.message}</p>
+            <div className="px-10 py-10">
+              {successMessage && <p>{successMessage}</p>}
             </div>
-          </div>
-          <div className="md:flex md:items-center">
-            <div className="md:w-1/3"></div>
-            <button
-              className="shadow bg-slate-600 hover:bg-slate-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
-              role="submit"
-            >
-              {isSubmitting ? 'Submitting' : 'Submit'}
-            </button>
-          </div>
-          <div className="px-10 py-10">
-            {successMessage && <p>{successMessage}</p>}
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </div>
   )

@@ -7,7 +7,7 @@ const About = () => {
       className="flex flex-col align-middle xxs:flex-col xs:flex-col xl:flex xl:flex-row xl:w-full lg:flex lg:flex-row lg:h-max md:flex md:h-max sm:flex sm:flex-row sm:h-max py-0 px-0 w-full sm:items-center  border-t-[2rem] border-t-red-900"
     >
       <div className="w-full">
-        <div className="flex justify-end w-full bg-headShotBGI bg-cover md:bg-contain lg:bg-contain xl:h-[90vh] xl:bg-contain xl:flex h-96  bg-scroll mx-auto bg-no-repeat "></div>
+        <div className="flex justify-end w-full bg-headShotBGI bg-cover md:bg-contain lg:bg-contain lg:w-[893px] lg:h-[893px] xl:w-[893px] xl:h-[893px] xl:min-h-[980px] xl:bg-cover xl:flex h-96  bg-scroll mx-auto bg-no-repeat "></div>
       </div>
 
       <div className="flex w-full justify-center ">
