@@ -49,16 +49,17 @@ function GlobalNavBar() {
           : 'fixed w-full h-20 z-[60]  bg-cover bg-center bg-no-repeat'
       }
     >
-      <div className="flex py-7 px-5 text-base z-20 fixed top-0 left-0 justify-start w-full h-full 2xl:px-4 max-w-[2000px] mx-auto">
+      <div className="flex py-7 px-5 text-base text-stone-400 z-20 fixed justify-start items-start h-full 2xl:px-4 max-w-[2000px] mx-auto">
         <div className="max-w-5xl mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             {items.map((item) => {
               return (
-                <ul className="flex py-2 px-6 " key={item.label}>
+                <ul className="flex pb-3 px-6 " key={item.label}>
                   <li
-                    className="flex-row border-t-4 hover:border-t-red-500"
+                    className="flex-row hover:border-t-4 py-3 focus-within:text-white focus-within:border-t-4"
                     key={item.label}
                   >
+                    {/* focus:border-t-4  */}
                     <Link href={item.linkURL}>{item.label}</Link>
                   </li>
                 </ul>

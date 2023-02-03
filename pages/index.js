@@ -11,14 +11,14 @@ import ContactForm from "../components/ContactForm";
 
 export default function Home() {
     return (
-        <div className='min-h-max container relative mx-auto px-0 py-0 max-w-[2000px] w-[100vw]'>
+        <div className='w-full min-h-max container relative mx-auto px-0 py-0 max-w-[2000px]'>
             <Head>
                 <title>Matthew Hernandez</title>
                 <meta name='description' content='Film & Game Composer' />
                 <link rel='icon' href='/favicon.ico' />
             </Head>
 
-            <main className='flex flex-1 min-h-[100vh] justify-center'>
+            <main className='flex w-full flex-1 min-h-[100vh] justify-center'>
                 <div className=''>
                     <GlobalNavBar />
                     <Header />
