@@ -57,7 +57,7 @@ function GlobalNavBar() {
             <ul className="hidden lg:flex mr-2 pb-3 px-6 " key={item.label}>
               <li
                 // className="flex-row hover:border-t-4 py-3 focus-within:text-white focus-within:border-t-4"
-                className="hover:border-t-4 py-3 focus-within:text-white focus-within:border-t-4 mx-2 text-md uppercase group hover:cursor-pointer font-myriad text-transparent bg-clip-text bg-gradient-to-br from-[#ffffff] to-[#7a8ea2] hover:text-[#ffffff] self-center "
+                className="hover:border-t-4 py-3 focus-within:text-white focus-within:border-t-4 mx-2 text-lg uppercase group hover:cursor-pointer font-myriad text-transparent bg-clip-text bg-gradient-to-br from-[#ffffff] to-[#958935] hover:text-[#ffffff] self-center "
                 key={item.label}
               >
                 {/* focus:border-t-4  */}
