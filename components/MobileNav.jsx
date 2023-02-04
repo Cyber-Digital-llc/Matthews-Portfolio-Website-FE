@@ -51,7 +51,7 @@ function Nav() {
           : 'fixed w-full h-20 z-[60]  bg-cover bg-center bg-no-repeat'
       }
     >
-      <div className=" max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className=" max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex justify-start items-center">
             <div className="flex-shrink-0">
@@ -165,34 +165,34 @@ function Nav() {
               </a>
 
               <a
-                href="#"
+                href="#about"
                 className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               >
                 About
               </a>
 
               <a
-                href="#"
+                href="#credits"
                 className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               >
                 Credits
               </a>
 
               <a
-                href="#"
+                href="#music"
                 className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               >
                 Music
               </a>
 
               <a
-                href="#"
+                href="#contact"
                 className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               >
                 Contact
               </a>
               <a
-                href="#"
+                href="#epk"
                 className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               >
                 EPK
