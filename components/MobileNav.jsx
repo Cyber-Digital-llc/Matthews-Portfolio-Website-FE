@@ -47,7 +47,7 @@ function Nav() {
     <nav
       className={
         shadow
-          ? 'fixed w-full h-20 z-[60] ease-in-out duration-300  bg-[rgb(63,10,10)] bg-cover bg-center bg-no-repeat shadow-black shadow-xl'
+          ? 'fixed w-full h-20 z-[60] ease-in-out duration-300  bg-[rgba(63,10,10,0.98)] bg-cover bg-center bg-no-repeat shadow-black shadow-xl'
           : 'fixed w-full h-20 z-[60]  bg-cover bg-center bg-no-repeat'
       }
     >
@@ -56,27 +56,20 @@ function Nav() {
           <div className="flex justify-start items-center">
             <div className="flex-shrink-0">
               {/* <img
-                  className="h-8 w-8"
-                  src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
-                  alt="Workflow"
-                /> */}
+                className="h-8 w-8"
+                src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
+                alt="Workflow"
+              /> */}
             </div>
             <div className="hidden md:block">
               <div className="flex items-center justify-start ">
-                {/* <a
-                    href="#"
-                    className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
-                  >
-                    Dashboard
-                  </a>
-
+                {/* 
                   <a
                     href="#"
                     className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Team
                   </a>
-
               */}
                 {items.map((item) => {
                   return (
@@ -86,7 +79,8 @@ function Nav() {
                     >
                       <li
                         // className="flex-row hover:border-t-4 py-3 focus-within:text-white focus-within:border-t-4"
-                        className="flex hover:border-t-4 py-3 focus-within:text-white focus-within:border-t-4 mx-2 text-lg uppercase group hover:cursor-pointer text-transparent bg-clip-text bg-gradient-to-br from-[#ffffff] to-[#66707f] hover:text-[#ffffff] self-center "
+                        className="
+                        flex hover:border-t-4 py-3 focus-within:text-white focus-within:border-t-4 mx-2 text-lg uppercase group hover:cursor-pointer text-transparent bg-clip-text bg-gradient-to-br from-[#ffffff] to-[#66707f] hover:text-[#ffffff] self-center "
                         key={item.label}
                       >
                         {/* focus:border-t-4  */}
