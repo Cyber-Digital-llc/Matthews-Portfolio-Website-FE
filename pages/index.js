@@ -8,7 +8,7 @@ import Music from "../components/Music";
 // import Contact from "../components/Contact";
 import GlobalNavBar from "../components/GlobalNavbar";
 import ContactForm from "../components/ContactForm";
-
+import MobileNav from "../components/MobileNav";
 export default function Home() {
     return (
         <div className='w-full min-h-max relative mx-auto px-0 py-0 max-w-[2000px]'>
@@ -20,7 +20,8 @@ export default function Home() {
 
             <main className='flex w-full flex-1 min-h-[100vh] justify-center'>
                 <div className=''>
-                    <GlobalNavBar />
+                    <MobileNav />
+                    {/* <GlobalNavBar /> */}
                     <Header />
                     <About />
                     <Credits />
