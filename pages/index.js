@@ -11,7 +11,7 @@ import ContactForm from "../components/ContactForm";
 import MobileNav from "../components/MobileNav";
 export default function Home() {
     return (
-        <div className=' min-h-max relative mx-auto max-w-[2000px]'>
+        <div className=' '>
             <Head>
                 <title>Matthew Hernandez</title>
                 <meta name='description' content='Film & Game Composer' />
