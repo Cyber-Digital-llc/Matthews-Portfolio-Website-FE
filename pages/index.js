@@ -11,14 +11,14 @@ import ContactForm from "../components/ContactForm";
 import MobileNav from "../components/MobileNav";
 export default function Home() {
     return (
-        <div className='w-full min-h-max relative mx-auto px-0 py-0 max-w-[2000px]'>
+        <div className=' min-h-max relative mx-auto max-w-[2000px]'>
             <Head>
                 <title>Matthew Hernandez</title>
                 <meta name='description' content='Film & Game Composer' />
                 <link rel='icon' href='/favicon.ico' />
             </Head>
 
-            <main className='flex w-full flex-1 min-h-[100vh] justify-center'>
+            <main className=''>
                 <div className=''>
                     <MobileNav />
                     {/* <GlobalNavBar /> */}
