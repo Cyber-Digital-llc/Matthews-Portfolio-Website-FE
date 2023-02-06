@@ -20,11 +20,11 @@ const Header = () => {
       {/* // </> */}
       <div className="flex" onClick={() => set((state) => !state)}>
         <Trail open={open}>
-          <span className="flex font-bold text-6xl pb-6 md:pb-0 lg:pb-0 xl:pb-0 2xl:pb-0 sm:text-6xl xl:text-8xl md:mb-6">
+          <span className="flex font-bold text-6xl pb-6 md:pb-0 lg:pb-0 xl:pb-0 2xl:pb-0 sm:text-6xl xl:text-8xl md:mb-3">
             Matthew Hernandez
           </span>
           <div className="">
-            <span className="flex text-2xl pb-6 md:pb-0 lg:pb-0 xl:pb-0 2xl:pb-0 sm:text-5xl xl:text-8xl md:mb-6">
+            <span className="flex text-2xl pt-9 md:pb-0 lg:py-0 xl:pb-0 2xl:pb-0 sm:text-5xl xl:text-8xl md:mb-6">
               Film/Game Composer
             </span>
           </div>
