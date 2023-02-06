@@ -23,8 +23,8 @@ const Header = () => {
           <span className="flex font-bold text-6xl pb-6 md:pb-0 lg:pb-0 xl:pb-0 2xl:pb-0 sm:text-6xl xl:text-8xl md:mb-6">
             Matthew Hernandez
           </span>
-          <div className=" pt-4 lg:pt-0 xl:pt-0 2xl:pt-0 ">
-            <span className="sm:text-4xl xl:text-5xl 2xl:text-4.5xl">
+          <div className="">
+            <span className="flex text-2xl pb-6 md:pb-0 lg:pb-0 xl:pb-0 2xl:pb-0 sm:text-5xl xl:text-8xl md:mb-6">
               Film/Game Composer
             </span>
           </div>
