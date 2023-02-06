@@ -8,7 +8,7 @@ const Music = () => {
       className="flex flex-col-reverse xxs:flex xxs:flex-col-reverse sm:flex sm:flex-col-reverse xl:flex xl:flex-row h-max bg-black-900 py-0 px-0 w-full items-center"
     >
       <div className="w-full">
-        <div className="flex justify-center w-full bg-musicBGI h-[90vh] bg-contain bg-fixed mx-auto bg-no-repeat "></div>
+        <div className="flex justify-center w-full bg-musicBGI h-[90vh] bg-contain bg-scroll 2xl:bg-fixed xl:bg-fixed lg:bg-fixed md:bg-fixed mx-auto bg-no-repeat "></div>
       </div>
 
       <div className="flex justify-center w-full">
