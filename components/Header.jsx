@@ -24,7 +24,9 @@ const Header = () => {
             Matthew Hernandez
           </span>
           <div className=" pt-4 lg:pt-0 xl:pt-0 2xl:pt-0 ">
-            <span className=" text-4xl xl:text-5xl">Film/Game Composer</span>
+            <span className="sm:text-4xl xl:text-5xl 2xl:text-4.5xl">
+              Film/Game Composer
+            </span>
           </div>
         </Trail>
       </div>
