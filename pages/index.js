@@ -31,7 +31,7 @@ export default function Home() {
                 </div>
             </main>
 
-            <footer className='flex justify-center align-center bg-[rgb(63,10,10)] '>
+            <footer className='flex w-[100vw] justify-center align-center bg-[rgb(63,10,10)] '>
                 <a
                     href='https://cyberdigitalllc.com'
                     target='_blank'

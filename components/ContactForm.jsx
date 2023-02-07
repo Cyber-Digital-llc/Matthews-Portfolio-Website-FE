@@ -30,7 +30,7 @@ export default function ContactForm() {
   return (
     <div
       id="contact"
-      className="flex w-full justify-center align-middle content-center items-center border-t-[2rem] 
+      className="flex w-[100vw] justify-center align-middle content-center items-center border-t-[2rem] 
       border-t-[rgb(63,10,10)]"
     >
       <div className="flex flex-col md:flex-row lg:flex-row xl:flex-row 2xl:flex-row align-middle content-center justify-center">
@@ -46,7 +46,7 @@ export default function ContactForm() {
             <h2 className="items-center content-center align-middle flex justify-center py-10">
               GET IN TOUCH
             </h2>
-            <div className="flex flex-wrap">
+            <div className="flex flex-wrap -mx-3 mb-6">
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 <label
                   className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
