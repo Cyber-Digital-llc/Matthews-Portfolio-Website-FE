@@ -30,7 +30,8 @@ export default function ContactForm() {
   return (
     <div
       id="contact"
-      className="flex w-full py-14 justify-center align-middle content-center items-center"
+      className="flex justify-center align-middle content-center items-center border-t-[2rem] 
+      border-t-[rgb(63,10,10)]"
     >
       <div className="flex flex-col md:flex-row lg:flex-row xl:flex-row 2xl:flex-row align-middle content-center justify-center">
         <div className="flex flex-col text-center md:text-right py-10 px-10">
