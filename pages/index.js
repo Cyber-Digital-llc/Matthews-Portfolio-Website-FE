@@ -11,7 +11,7 @@ import ContactForm from "../components/ContactForm";
 import MobileNav from "../components/MobileNav";
 export default function Home() {
     return (
-        <div className=' '>
+        <div className='w-[100vw] '>
             <Head>
                 <title>Matthew Hernandez</title>
                 <meta name='description' content='Film & Game Composer' />
