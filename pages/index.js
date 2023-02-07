@@ -11,7 +11,7 @@ import ContactForm from "../components/ContactForm";
 import MobileNav from "../components/MobileNav";
 export default function Home() {
     return (
-        <div className='w-[100vw] '>
+        <div className=''>
             <Head>
                 <title>Matthew Hernandez</title>
                 <meta name='description' content='Film & Game Composer' />
@@ -31,7 +31,7 @@ export default function Home() {
                 </div>
             </main>
 
-            <footer className='flex w-[100vw] justify-center align-center bg-[rgb(63,10,10)] '>
+            <footer className='flex justify-center align-center bg-[rgb(63,10,10)] '>
                 <a
                     href='https://cyberdigitalllc.com'
                     target='_blank'
