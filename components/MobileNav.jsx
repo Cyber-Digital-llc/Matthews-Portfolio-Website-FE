@@ -48,7 +48,7 @@ function Nav() {
       className={
         shadow
           ? 'fixed w-full h-20 z-[60] ease-in-out duration-300  bg-[rgba(63,10,10,0.98)] bg-cover bg-center bg-no-repeat shadow-black shadow-xl'
-          : 'fixed w-full h-20 z-[60]  bg-cover bg-center bg-no-repeat'
+          : 'fixed w-full h-20 z-[60] bg-cover bg-center bg-no-repeat'
       }
     >
       <div className=" max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
