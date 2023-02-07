@@ -30,10 +30,10 @@ export default function ContactForm() {
   return (
     <div
       id="contact"
-      className=" flex flex-col w-full py-14 justify-center align-middle content-center items-center"
+      className="flex w-full py-14 justify-center align-middle content-center items-center"
     >
-      <div className="flex justify-center w-full">
-        <div className=" py-10 px-10">
+      <div className="flex flex-col md:flex-row lg:flex-row xl:flex-row 2xl:flex-row align-middle content-center justify-center">
+        <div className="flex flex-col text-center md:text-right py-10 px-10">
           <h2>Matthew Hernandez</h2>
           <p className="">FILM/GAME COMPOSE</p>
           <p>Office:</p>
