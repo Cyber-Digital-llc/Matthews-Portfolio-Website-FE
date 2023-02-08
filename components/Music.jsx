@@ -9,7 +9,7 @@ const Music = () => {
       border-t-[rgb(63,10,10)]"
     >
       <div className="w-full">
-        <div className="flex justify-end w-full bg-fit bg-center bg-musicBGI bg-cover bg-fixed md:bg-contain xl:bg-contain lg:w-full lg:bg-fixed lg:bg-fit lg:bg-contain xl:w-full xl:h-full xl:min-h-[980px] xl:flex h-96 mx-auto bg-no-repeat  "></div>
+        <div className="flex w-full bg-fit bg-musicBGI bg-contain bg-scroll md:bg-contain xl:bg-contain lg:w-full lg:bg-fixed lg:bg-fit lg:bg-contain xl:w-full xl:h-full xl:min-h-[980px] xl:flex h-96 mx-auto bg-no-repeat  "></div>
       </div>
 
       <div className="flex justify-center w-full h-full px-3">
