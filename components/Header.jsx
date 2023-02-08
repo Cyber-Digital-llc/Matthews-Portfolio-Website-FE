@@ -25,7 +25,7 @@ const Header = () => {
           </span>
           <div className="">
             <span className="flex text-2xl pt-9 md:pb-0 lg:py-0 xl:pb-0 2xl:pt-8 sm:text-5xl xl:text-8xl md:mb-6">
-              Film/Game Composer
+              Film | Game Composer
             </span>
           </div>
         </Trail>
