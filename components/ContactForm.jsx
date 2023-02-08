@@ -35,8 +35,8 @@ export default function ContactForm() {
     >
       <div className="flex flex-col md:flex-row lg:flex-row xl:flex-row 2xl:flex-row align-middle content-center justify-center">
         <div className="flex flex-col text-center md:text-right py-10 px-10">
-          <h2>Matthew Hernandez</h2>
-          <p className="">FILM/GAME COMPOSE</p>
+          <h2>MATTHEW HERNANDEZ</h2>
+          <p className="">Film | Game Composer</p>
           <p>Office:</p>
           <p>Phone Number:</p>
           <p>Direct Email: </p>
