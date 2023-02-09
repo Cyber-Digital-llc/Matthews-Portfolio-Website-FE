@@ -27,10 +27,6 @@ const items = [
     label: 'EPK',
     linkURL: '/electronicPressKit',
   },
-  {
-    label: 'Peach',
-    linkURL: '/electronicPressKit',
-  },
 ]
 
 function Nav() {
