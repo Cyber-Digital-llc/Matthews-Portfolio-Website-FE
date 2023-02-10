@@ -32,6 +32,11 @@ const items = [
 function Nav() {
   const [isOpen, setIsOpen] = useState(false)
   const [shadow, setShadow] = useState(false)
+  const [nav, setNav] = useState(false)
+
+  const handleNav = () => {
+    setNav(!nav)
+  }
 
   useEffect(() => {
     const handleShadow = () => {
@@ -96,7 +101,7 @@ function Nav() {
             <button
               onClick={() => setIsOpen(!isOpen)}
               type="button"
-              className="bg-stone-900 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+              className="rounded-full font-myriadpro text-xl  shadow-md shadow-[#ffffff] text-[#ffffff] hover:text-[#989898] p-2 px-4 cursor-pointe"
               aria-controls="mobile-menu"
               aria-expanded="false"
             >
