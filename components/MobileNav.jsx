@@ -97,7 +97,7 @@ function Nav() {
               </div>
             </div>
           </div>
-          <div className="-mr-2 flex md:hidden">
+          <div className={nav ? '-mr-2 flex md:hidden' : ''}>
             <button
               onClick={() => setIsOpen(!isOpen)}
               type="button"
