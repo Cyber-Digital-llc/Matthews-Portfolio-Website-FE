@@ -1,16 +1,15 @@
 import React from 'react'
-import Image from 'next/image'
 
 const Credits = () => {
   return (
     <div
       id="credits"
-      className="flex flex-col-reverse align-middle xxs:flex-col xs:flex-col xl:flex xl:flex-row xl:w-full xl:h-[50vh] lg:flex lg:flex-row lg:h-max md:flex md:h-max sm:flex sm:flex-row sm:h-max py-0 px-0 w-full sm:items-center border-t-[2rem] 
+      className="flex flex-col-reverse align-middle xxs:flex-col xs:flex-col xl:pt-0 xl:flex xl:flex-row xl:w-full xl:h-[47vh] lg:flex lg:flex-row lg:h-max md:flex md:h-max sm:flex sm:flex-row sm:h-max py-0 px-0 w-full sm:items-center border-t-[2rem] 
       border-t-[rgb(63,10,10)]"
     >
-      <div className="flex w-full justify-center ">
-        <div className="flex justify-center mx-auto px-0 lg:justify-start lg:px-14 md:justify-start md:px-14 xl:justify-start xl:px-14 ">
-          <div className="w-[65%] ">
+      <div className="flex w-full h-full py-0 justify-center ">
+        <div className="flex justify-center mx-auto px-0 lg:justify-start lg:px-14 md:justify-start md:px-14 xl:justify-start xl:px-14 xl:py-0">
+          <div className="w-[65%] xl:py-0">
             <h2 className="text-3xl py-2">Selected</h2>
             <p className="text-6xl py-2">Credits</p>
             <p className="py-3 max-w-prose">
@@ -33,7 +32,7 @@ const Credits = () => {
       </div>
 
       <div className="flex w-full h-full xl:flex lg:h-full xl:h-full xl:align-middle xl:items-center ">
-        <div className="flex justify-center w-full bg-creditsBGI h-[300px] lg:h-[90vh] lg:bg-contain xl:h-[90vh] bg-cover bg-no-repeat bg-fit bg-scroll mx-auto bg-center"></div>
+        <div className="flex justify-center w-full bg-creditsBGI h-[300px] lg:h-[90vh] lg:bg-contain xl:h-full xl:py-0 bg-cover bg-no-repeat bg-fit bg-scroll mx-auto bg-center"></div>
       </div>
     </div>
     // <div
