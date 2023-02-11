@@ -11,7 +11,7 @@ import ContactForm from "../components/ContactForm";
 import MobileNav from "../components/MobileNav";
 export default function Home() {
     // Get the button
-    let mybutton = document.getElementById("btn-back-to-top");
+    let mybutton = window.document.getElementById("btn-back-to-top");
 
     // When the user scrolls down 20px from the top of the document, show the button
     window.onscroll = function () {
@@ -20,8 +20,8 @@ export default function Home() {
 
     function scrollFunction() {
         if (
-            document.body.scrollTop > 20 ||
-            document.documentElement.scrollTop > 20
+            window.document.body.scrollTop > 20 ||
+            window.document.documentElement.scrollTop > 20
         ) {
             mybutton.style.display = "block";
         } else {
@@ -32,8 +32,8 @@ export default function Home() {
     mybutton.addEventListener("click", backToTop);
 
     function backToTop() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
+        window.document.body.scrollTop = 0;
+        window.document.documentElement.scrollTop = 0;
     }
     return (
         <div className=''>
