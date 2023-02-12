@@ -30,7 +30,7 @@ export default function ContactForm() {
   return (
     <div
       id="contact"
-      className="flex w-[100vw] justify-center align-middle content-center items-center border-t-[2rem] 
+      className="flex w-[100vw]  bg-black bg-opacity-50 justify-center align-middle content-center items-center border-t-[2rem] 
       border-t-[rgb(63,10,10)]"
     >
       <div className="flex flex-col md:flex-row lg:flex-row xl:flex-row 2xl:flex-row align-middle content-center justify-center">
