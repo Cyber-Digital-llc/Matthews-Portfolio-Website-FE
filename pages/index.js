@@ -13,7 +13,7 @@ import ScrollToTopButton from "../components/ScrollToTopButton";
 
 export default function Home() {
     return (
-        <div className='w-[100vw] px-10 bg-cover bg-no-repeat lg:bg-cover 2xl:bg-cover bg-center bg-headerBGI md:bg-fixed md:w-[100vw] mx-auto flex items-center justify-center flex-col min-h-[676px] scrollbar-hide relative overflow-y-auto overflow-x-hidden md:overflow-x-visible md:overflow-y-visible'>
+        <div className='relative px-10 bg-no-repeat bg-fit bg-fixed bg-cover h-auto lg:bg-cover 2xl:bg-cover bg-center bg-headerBGI md:bg-fixed md:w-[100vw] mx-auto flex items-center justify-center flex-col scrollbar-hide  overflow-y-auto overflow-x-hidden md:overflow-x-visible md:overflow-y-visible'>
             <Head>
                 <title>Matthew Hernandez</title>
                 <meta name='description' content='Film & Game Composer' />

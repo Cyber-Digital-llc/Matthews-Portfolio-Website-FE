@@ -31,7 +31,7 @@ function ScrollToTopButton() {
 
   return (
     <motion.button
-      className="fixed bottom-0 right-0 p-10"
+      className="fixed bottom-0 right-0 p-3 rounded-md font-myriadpro text-xl  shadow-md shadow-[#ffffff] text-[#ffffff] hover:text-[#989898] cursor-pointer"
       variants={ScrollToTopContainerVariants}
       initial="hide"
       animate={controls}

@@ -101,7 +101,7 @@ function Nav() {
             <button
               onClick={() => setIsOpen(!isOpen)}
               type="button"
-              className="rounded-full font-myriadpro text-xl  shadow-md shadow-[#ffffff] text-[#ffffff] hover:text-[#989898] p-2 px-4 cursor-pointe"
+              className="rounded-md font-myriadpro text-xl  shadow-md shadow-[#ffffff] text-[#ffffff] hover:text-[#989898] p-2 px-4 cursor-pointer"
               aria-controls="mobile-menu"
               aria-expanded="false"
             >
