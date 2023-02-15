@@ -6,8 +6,8 @@ const About = () => {
       id="about"
       className="flex  bg-black bg-opacity-95  flex-col h-max align-middle xxs:flex-col xs:flex-col xl:flex xl:flex-row xl:w-full lg:flex lg:flex-row lg:h-max lg:w-full amd:flex md:h-max sm:flex sm:flex-row sm:h-max py-0 px-0 w-full sm:items-center border-t-[2rem] border-t-[rgba(63,10,10,0.98)]"
     >
-      <div className="flex w-full xl:flex md:w-[50vw] lg:max-w-full xl:w-[50vw] 2xl:w-[50vw]">
-        <div className="w-full lg:max-h-max flex justify-end xl:items-center bg-headShotBGI bg-cover bg-center md:bg-contain lg:w-full md:min-h-max md:flex md:justify-end lg:bg-fit lg:h-[600px] lg:flex lg:flex-row lg:justify-end  lg:min-h-max xl:justify-end xl:w-[50vw] xl:h-[900px] xl:min-h-[900px] xl:bg-cover xl:flex h-96 bg-scroll mx-auto bg-no-repeat 2xl:flex "></div>
+      <div className="flex w-full xl:flex md:w-[50vw] lg:flex lg:justify-end lg:max-w-full xl:flex-end  xl:w-[50vw] 2xl:w-[50vw]">
+        <div className="w-full lg:max-h-max justify-end xl:items-end bg-headShotBGI bg-cover bg-center md:bg-contain lg:w-full md:min-h-max md:flex md:justify-end lg:bg-fit lg:h-[600px] lg:flex lg:flex-row lg:justify-end  lg:min-h-max xl:justify-end xl:w-[50vw] xl:h-[900px] xl:min-h-[900px] xl:bg-fit xl:bg-contain xl:flex h-96 bg-scroll mx-auto bg-no-repeat 2xl:flex "></div>
       </div>
 
       <div className="flex w-full  justify-center md:w-[50vw] lg:w-[50vw] xl:w-[50vw] 2xl:w-[50vw] ">
