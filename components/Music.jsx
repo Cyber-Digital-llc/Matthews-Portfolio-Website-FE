@@ -5,14 +5,14 @@ const Music = () => {
   return (
     <div
       id="music"
-      className="flex flex-col align-middle xxs:flex-col xs:flex-col xl:flex xl:flex-row xl:w-full lg:flex lg:flex-row lg:h-max md:flex md:h-max sm:flex sm:flex-row sm:h-max py-0 px-0 w-full sm:items-center border-t-[2rem] 
+      className="flex  bg-black bg-opacity-95 flex-col align-middle xxs:flex-col xs:flex-col xl:flex xl:flex-row xl:w-full lg:flex lg:flex-row lg:h-max md:flex md:h-max sm:flex sm:flex-row sm:h-max py-0 px-0 w-full sm:items-center border-t-[2rem] 
       border-t-[rgb(63,10,10)]"
     >
       <div className="xl:w-[50vw]">
         <div className="flex w-full bg-center bg-musicBGI bg-cover bg-scroll sm:bg-left sm:w-[100vw] md:bg-left md:bg-fit md:flex md:flex-row md:w-full md:bg-contain xl:bg-contain lg:w-full lg:bg-fixed lg:bg-fit lg:bg-left lg:bg-contain xl:w-full xl:bg-left xl:bg-fit xl:h-full xl:min-h-[980px] xl:flex h-96 mx-auto bg-no-repeat "></div>
       </div>
 
-      <div className="flex  bg-black bg-opacity-50 py-0 justify-center xl:w-[50vw] h-auto ">
+      <div className="flex py-0 justify-center xl:w-[50vw] h-auto ">
         <div className="flex justify-center mx-auto py-[3%] lg:justify-start lg:px-14 md:justify-start md:px-0 xl:justify-start xl:px-0 ">
           <div className="w-full">
             <p className="text-6xl py-2">MUSIC</p>
