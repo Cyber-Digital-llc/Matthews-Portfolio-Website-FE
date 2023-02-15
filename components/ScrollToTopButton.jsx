@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import { motion, useScroll, useAnimationControls } from 'framer-motion'
 
 //The approach recommended by Next.js
@@ -31,7 +31,7 @@ function ScrollToTopButton() {
 
   return (
     <motion.button
-      className="fixed bottom-0 right-0 p-3 rounded-md font-myriadpro text-xl  shadow-md shadow-[#ffffff] text-[#ffffff] hover:text-[#989898] cursor-pointer"
+      className="fixed bottom-0 right-0 p-4 rounded-md font-myriadpro text-xl  shadow-md shadow-[#ffffff] text-[#ffffff] hover:text-[#989898] cursor-pointer"
       variants={ScrollToTopContainerVariants}
       initial="hide"
       animate={controls}
