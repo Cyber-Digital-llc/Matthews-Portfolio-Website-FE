@@ -10,10 +10,13 @@ import GlobalNavBar from "../components/GlobalNavbar";
 import ContactForm from "../components/ContactForm";
 import MobileNav from "../components/MobileNav";
 import ScrollToTopButton from "../components/ScrollToTopButton";
+import heroBG from "../public/heroBGcopy.jpg";
+
+// relative px-10 bg-no-repeat bg-fit bg-fixed bg-cover h-auto lg:bg-cover 2xl:bg-cover bg-center bg-headerBGI md:bg-fixed w-[100vw] mx-auto flex items-center justify-center flex-col scrollbar-hide  overflow-y-auto overflow-x-hidden md:overflow-x-visible md:overflow-y-visible
 
 export default function Home() {
     return (
-        <div className=' relative px-10 bg-no-repeat bg-fit bg-fixed bg-cover h-auto lg:bg-cover 2xl:bg-cover bg-center bg-headerBGI md:bg-fixed md:w-[100vw] mx-auto flex items-center justify-center flex-col scrollbar-hide  overflow-y-auto overflow-x-hidden md:overflow-x-visible md:overflow-y-visible'>
+        <div className=' relative px-10 bg-no-repeat bg-fit bg-fixed bg-cover h-auto lg:bg-cover 2xl:bg-cover bg-center md:bg-fixed w-[100vw] mx-auto flex items-center justify-center flex-col scrollbar-hide  overflow-y-auto overflow-x-hidden md:overflow-x-visible md:overflow-y-visible'>
             {/* <div className='static z-20'> */}
             <Head>
                 <title>Matthew Hernandez</title>
@@ -21,7 +24,7 @@ export default function Home() {
                 <link rel='icon' href='/favicon.ico' />
             </Head>
 
-            <main className=''>
+            <main className='relative z-[2]'>
                 <div className=''>
                     <MobileNav />
                     {/* <GlobalNavBar /> */}
