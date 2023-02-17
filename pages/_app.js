@@ -1,20 +1,18 @@
-import GlobalNavBar from "../components/GlobalNavbar";
+import heroBG from "../public/heroBGcopy.jpg";
 import Image from "next/image";
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
     return (
-        <div className='relative'>
-            <div className='absolute  w-screen h-screen overflow-clip'>
-                <div className='absolute  h-full '>
-                    <img
-                        src={"/heroBGcopy.jpg"}
-                        className='object-none object-center h-full fixed'
-                        // fill
-                        alt='image'
-                    />
-                </div>
+        <div className=''>
+            <div className='fixed h-full w-full z-0'>
+                <Image
+                    src={heroBG}
+                    className='object-cover h-screen'
+                    alt='image'
+                />
             </div>
+
             {/* <GlobalNavBar /> */}
             <Component {...pageProps} />
         </div>
