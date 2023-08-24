@@ -5,7 +5,7 @@ const Music = () => {
   return (
     <div
       id="music"
-      className="flex  bg-black bg-opacity-95 flex-col align-middle xxs:flex-col xs:flex-col xl:flex xl:flex-row xl:w-full lg:flex lg:flex-row lg:h-max md:flex md:h-max sm:flex sm:flex-row sm:h-max py-0 px-0 w-full sm:items-center border-t-[2rem] 
+      className=" bg-black bg-opacity-95 flex-col align-middle xxs:flex-col xs:flex-col xl:flex xl:flex-row xl:w-full lg:flex lg:flex-row lg:h-max md:flex md:h-max sm:flex sm:flex-row sm:h-max py-0 px-0 w-full sm:items-center border-t-[2rem] 
       border-t-[rgb(63,10,10)]"
     >
       <div className="xl:w-[50vw]">
@@ -17,24 +17,37 @@ const Music = () => {
           <div className="w-full">
             <p className="text-6xl py-2">MUSIC</p>
             <h2 className="text-3xl py-2">RECENT WORK</h2>
-            <iframe
+            {/* <iframe
               width="100%"
               height="300"
               scrolling="no"
-              frameborder="no"
+              frameBorder="no"
               allow="autoplay"
               src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/220146829&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-            ></iframe>
-
-            <p className="py-3 max-w-prose">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ex,
-              voluptatibus accusantium rem cumque vitae non voluptas sapiente
-              expedita quisquam totam dolorum culpa alias minima ducimus
-              consequatur neque commodi accusamus?
-            </p>
-            <p className="py-3 max-w-prose">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione.
-            </p>
+            ></iframe> */}
+            <div className="flex flex-col justify-center items-center align-middle ">
+              <div className=" w-full aspect-w-16 aspect-h-9">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/HZUqk458IDQ?si=I6juknz6GVq92sAd"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen="allowfullscreen"
+                ></iframe>
+              </div>
+              <p className="py-3 max-w-prose">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                ex, voluptatibus accusantium rem cumque vitae non voluptas
+                sapiente expedita quisquam totam dolorum culpa alias minima
+                ducimus consequatur neque commodi accusamus?
+              </p>
+              <p className="py-3 max-w-prose">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Ratione.
+              </p>
+            </div>
           </div>
         </div>
       </div>
