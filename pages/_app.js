@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }) {
             <div className='fixed h-full w-full z-0'>
                 <Image
                     src={heroBG}
-                    className='object-cover h-screen'
+                    className='object-cover w-full h-screen'
                     alt='image'
                 />
             </div>
