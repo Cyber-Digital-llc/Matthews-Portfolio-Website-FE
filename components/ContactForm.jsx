@@ -30,13 +30,13 @@ export default function ContactForm() {
   return (
     <div
       id="contact"
-      className="flex w-[100vw]  bg-black bg-opacity-50 justify-center align-middle content-center items-center border-t-[2rem] 
+      className="flex w-[100vw] text-white bg-black bg-opacity-50 justify-center align-middle content-center items-center border-t-[2rem] 
       border-t-[rgb(63,10,10)]"
     >
       <div className="flex flex-col md:flex-row lg:flex-row xl:flex-row 2xl:flex-row align-middle content-center justify-center">
         <div className="flex flex-col text-center md:text-right py-10 px-10">
-          <h2>MATTHEW HERNANDEZ</h2>
-          <p className="">Film | Game Composer</p>
+          <h2 className="text-text-white">MATTHEW HERNANDEZ</h2>
+          <p className="text-white">Film | Game Composer</p>
           <p>Office:</p>
           <p>Phone Number:</p>
           <p>Direct Email: </p>
@@ -49,7 +49,7 @@ export default function ContactForm() {
             <div className="flex flex-wrap -mx-3 mb-6">
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 <label
-                  className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                  className="block uppercase tracking-wide text-teal-700 text-xs font-bold mb-2"
                   htmlFor="first-name"
                 >
                   First Name
@@ -67,7 +67,7 @@ export default function ContactForm() {
               </div>
               <div className="w-full md:w-1/2 px-3">
                 <label
-                  className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                  className="block uppercase tracking-wide text-teal-700 text-xs font-bold mb-2"
                   htmlFor="last-name"
                 >
                   Last Name
@@ -87,7 +87,7 @@ export default function ContactForm() {
             <div className="flex flex-wrap -mx-3 mb-6">
               <div className="w-full px-3">
                 <label
-                  className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                  className="block uppercase tracking-wide text-teal-700 text-xs font-bold mb-2"
                   htmlFor="email"
                 >
                   E-mail
@@ -106,7 +106,7 @@ export default function ContactForm() {
             <div className="flex flex-wrap -mx-3 mb-6">
               <div className="w-full px-3">
                 <label
-                  className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                  className="block uppercase tracking-wide text-teal-700  text-xs font-bold mb-2"
                   htmlFor="message"
                 >
                   Message
