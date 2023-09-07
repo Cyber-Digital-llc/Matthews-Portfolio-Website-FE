@@ -17,27 +17,49 @@ const Music = () => {
           <div className="w-full">
             <p className="text-6xl py-2">MUSIC</p>
             <h2 className="text-3xl py-2">RECENT WORK</h2>
-            {/* <iframe
-              width="100%"
-              height="300"
-              scrolling="no"
-              frameBorder="no"
-              allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/220146829&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-            ></iframe> */}
-            <div className="flex flex-col justify-center items-center align-middle ">
+            {/* <div className="lex flex-col justify-center items-center align-middle">
               <div className=" w-full aspect-w-16 aspect-h-9">
                 <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/HZUqk458IDQ?si=I6juknz6GVq92sAd"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen="allowfullscreen"
+                  width="100%"
+                  height="300"
+                  scrolling="no"
+                  frameBorder="no"
+                  allow="autoplay"
+                  src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/220146829&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
                 ></iframe>
               </div>
-              <p className="py-3 max-w-prose">
+            </div> */}
+
+            <div className="w-full lg:w-full xl:w-full 2xl:w-full lg:px-auto xl:px-auto 2xl:px-auto flex flex-col justify-center items-center align-middle ">
+              <div className="flex flex-col justify-center item-center align-middle w-[100vw] l:w-full xl:w-full 2xl:w-full aspect-w-16 aspect-h-9">
+                <div className=" py-2 lg:py-3 xl:py-3 2xl:py-3">
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    src="https://www.youtube.com/embed/WYMdHSTCdI0?si=cVl4pUK5wsSY_msB"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen="allowfullscreen"
+                  ></iframe>
+                </div>
+              </div>
+              <div className=" w-full aspect-w-16 aspect-h-9">
+                <div className=" py-2 lg:py-3 xl:py-3 2xl:py-3">
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    src="
+                    https://www.youtube.com/embed/HZUqk458IDQ?si=I6juknz6GVq92sAd
+                    "
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+              <p className=" py-2 lg:py-3 xl:py-3 2xl:py-3 max-w-prose">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
                 ex, voluptatibus accusantium rem cumque vitae non voluptas
                 sapiente expedita quisquam totam dolorum culpa alias minima
