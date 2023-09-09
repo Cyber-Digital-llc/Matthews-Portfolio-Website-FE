@@ -41,7 +41,7 @@ export default function Home() {
                 <div className='flex flex-row justify-center items-center'>
                     <a
                         className='flex flex-row justify-center items-center text-[#f5f5f5] text-[.9rem] font-bold hover:text-[#f5f5f5]'
-                        href='https://cyberdigitalllc.com'
+                        href='https://joethernandez.com'
                         target='_blank'
                         rel='noopener noreferrer'
                     >
