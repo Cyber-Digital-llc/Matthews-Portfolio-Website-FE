@@ -32,7 +32,7 @@ const Music = () => {
 
             <div className="w-full lg:w-full xl:w-full 2xl:w-full lg:px-auto xl:px-auto 2xl:px-auto flex flex-col justify-center items-center align-middle ">
               <div className="flex flex-col justify-center item-center align-middle w-[100vw] l:w-full xl:w-full 2xl:w-full aspect-w-16 aspect-h-9">
-                <div className=" py-2 lg:py-3 xl:py-3 2xl:py-3">
+                <div className=" py-4 lg:py-3 xl:py-3 2xl:py-3">
                   <iframe
                     width="100%"
                     height="100%"
@@ -42,6 +42,12 @@ const Music = () => {
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen="allowfullscreen"
                   ></iframe>
+                  {/* <div className="flex flex-col justify-center items-center align-middle">
+                    <p className="flex py-2 ">
+                      Descent and Mortality (World Premiere) Music by Matthew
+                      Hernandez
+                    </p>
+                  </div> */}
                 </div>
               </div>
               <div className=" w-full aspect-w-16 aspect-h-9">
@@ -65,10 +71,10 @@ const Music = () => {
                 sapiente expedita quisquam totam dolorum culpa alias minima
                 ducimus consequatur neque commodi accusamus?
               </p>
-              <p className="py-3 max-w-prose">
+              {/* <p className="py-3 max-w-prose">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Ratione.
-              </p>
+              </p> */}
             </div>
           </div>
         </div>

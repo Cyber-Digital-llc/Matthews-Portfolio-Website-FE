@@ -4,7 +4,7 @@ const Credits = () => {
   return (
     <div
       id="credits"
-      className="flex  bg-black bg-opacity-95 flex-col-reverse align-middle xxs:flex-col xs:flex-col xl:pt-0 xl:flex xl:flex-row xl:w-full xl:h-[60vh] lg:flex lg:flex-row lg:h-max md:flex md:h-max sm:flex sm:flex-row sm:h-max py-0 px-0 w-full sm:items-center border-t-[2rem] 
+      className="flex xl:py-0 2xl:py-0 lg:py-0 bg-black bg-opacity-95 flex-col-reverse align-middle xxs:flex-col xs:flex-col xl:pt-0 xl:flex xl:flex-row xl:w-full xl:h-[60vh] lg:flex lg:flex-row lg:h-max md:flex md:h-max sm:flex sm:flex-row sm:h-max py-0 px-0 w-full sm:items-center border-t-[2rem] 
       border-t-[rgb(63,10,10)]"
     >
       <div className="flex   w-full h-auto  justify-center ">
@@ -13,9 +13,9 @@ const Credits = () => {
             <h2 className="text-3xl py-2">Selected</h2>
             <p className="text-6xl py-2">Credits</p>
             <p className="flex py-3 max-w-prose">TBA</p>
+            {/* <p className="py-3 max-w-prose">TBA</p>
             <p className="py-3 max-w-prose">TBA</p>
-            <p className="py-3 max-w-prose">TBA</p>
-            <p className="py-3 max-w-prose">TBA</p>
+            <p className="py-3 max-w-prose">TBA</p> */}
             <button className="px-0 py-0 my-4 bg-red-900 h-12 w-[220px]">
               Download Full Bio (PDF)
             </button>

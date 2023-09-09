@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="flex bg-black bg-opacity-95 flex-col h-full align-middle xxs:flex-col xs:flex-col xl:flex xl:flex-row xl:w-full xl:h-max lg:flex lg:flex-row lg:w-full md:flex md:h-max sm:flex sm:flex-row sm:h-max py-auto px-0 w-full sm:items-center border-t-[2rem] border-t-[rgba(63,10,10,0.98)]"
+      className="flex py-10 xl:py-0 2xl:py-0 lg:py-0 bg-black bg-opacity-95 flex-col h-full align-middle xxs:flex-col xs:flex-col xl:flex xl:flex-row xl:w-full xl:h-max lg:flex lg:flex-row lg:w-full md:flex md:h-max sm:flex sm:flex-row sm:h-max py-auto px-0 w-full sm:items-center border-t-[2rem] border-t-[rgba(63,10,10,0.98)]"
     >
       <div className="flex w-full xl:flex md:w-[50vw] lg:flex lg:justify-end lg:w-full xl:flex-end xl:w-[50vw] xl:h-full xl:py-0 2xl:w-[50vw]">
         <div className="w-full justify-end xl:items-end bg-headShotBGI bg-cover bg-center md:bg-contain lg:w-full md:min-h-max md:flex md:justify-end lg:bg-fit lg:h-full lg:flex lg:flex-row lg:justify-end lg:min-h-max xl:justify-end xl:w-[50vw] xl:h-full xl:min-h-[900px] xl:py-0 xl:flex 2xl:bg-fit 2xl:bg-contain h-full bg-scroll mx-auto bg-no-repeat 2xl:flex 2xl-h-full"></div>
