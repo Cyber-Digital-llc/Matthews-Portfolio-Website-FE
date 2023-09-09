@@ -37,17 +37,22 @@ export default function Home() {
                 </div>
             </main>
             <ScrollToTopButton />
-            <footer className='full flex items-center justify-center align-center bg-[rgb(63,10,10)] '>
-                <a
-                    href='https://cyberdigitalllc.com'
-                    target='_blank'
-                    rel='noopener noreferrer'
-                >
-                    Created by{" "}
-                    <div className='flex'>
-                        <h2 className='flex flex-row'>Cyber Digital, llc</h2>
-                    </div>
-                </a>
+            <footer className='w-[100vw] flex items-center justify-center align-center bg-[rgb(63,10,10)] '>
+                <div className='flex flex-row justify-center items-center'>
+                    <a
+                        className='flex flex-row justify-center items-center text-[#f5f5f5] text-[.9rem] font-bold hover:text-[#f5f5f5]'
+                        href='https://cyberdigitalllc.com'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                    >
+                        <span className='font-light text-sm'>
+                            Created by&nbsp;{" "}
+                        </span>
+                        <div className='flex'>
+                            <h2 className='flex flex-row'>Cyber Digital</h2>
+                        </div>
+                    </a>
+                </div>
             </footer>
             {/* </div> */}
         </div>

@@ -9,10 +9,10 @@ const Credits = () => {
     >
       <div className="flex   w-full h-auto  justify-center ">
         <div className="flex justify-center mx-auto px-0 lg:justify-start lg:px-0 md:justify-start md:px-0 xl:justify-start xl:px-14 xl:py-0">
-          <div className="w-[65%] xl:py-0">
+          <div className="flex-col w-[65%] xl:py-0">
             <h2 className="text-3xl py-2">Selected</h2>
             <p className="text-6xl py-2">Credits</p>
-            <p className="py-3 max-w-prose">TBA</p>
+            <p className="flex py-3 max-w-prose">TBA</p>
             <p className="py-3 max-w-prose">TBA</p>
             <p className="py-3 max-w-prose">TBA</p>
             <p className="py-3 max-w-prose">TBA</p>
