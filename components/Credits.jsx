@@ -12,18 +12,10 @@ const Credits = () => {
           <div className="w-[65%] xl:py-0">
             <h2 className="text-3xl py-2">Selected</h2>
             <p className="text-6xl py-2">Credits</p>
-            <p className="py-3 max-w-prose">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque
-            </p>
-            <p className="py-3 max-w-prose">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ex,
-            </p>
-            <p className="py-3 max-w-prose">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione.
-            </p>
-            <p className="py-3 max-w-prose">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione.
-            </p>
+            <p className="py-3 max-w-prose">TBA</p>
+            <p className="py-3 max-w-prose">TBA</p>
+            <p className="py-3 max-w-prose">TBA</p>
+            <p className="py-3 max-w-prose">TBA</p>
             <button className="px-0 py-0 my-4 bg-red-900 h-12 w-[220px]">
               Download Full Bio (PDF)
             </button>
@@ -45,7 +37,7 @@ const Credits = () => {
     //         <h2 className="text-3xl py-2">Selected</h2>
     //         <p className="text-6xl py-2">Credits</p>
     //         <p className="py-3 max-w-prose">
-    //           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque
+    //           TBA
     //         </p>
     //         <p className="py-3 max-w-prose">
     //           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ex,
