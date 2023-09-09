@@ -16,18 +16,20 @@ const About = () => {
             <h2 className="text-2xl  max-w-prose">About</h2>
             <p className="text-5xl py-0 max-w-prose">Matthew Hernandez</p>
             <p className="py-3 max-w-prose">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque
-              veniam consequatur dolorum recusandae corrupti voluptatem,
-              obcaecati enim consectetur quis autem ipsa quisquam accusantium
-              dignissimos aliquid cum totam, porro in ut.
+              Matthew Hernandez is a promising young composer hailing from Los
+              Angeles County, California, USA. He was born and raised in this
+              vibrant cultural hub, where he nurtured his passion for music from
+              a young age.
             </p>
             <p className="py-3 max-w-prose">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ex,
-              voluptatibus accusantium rem cumque vitae non voluptas sapiente
-              expedita quisquam totam dolorum culpa alias minima ducimus
+              Currently, Matthew is pursuing his education in music composition
+              for visual media, honing his skills and knowledge to further his
+              career.
             </p>
             <p className="py-3 maw-w-prose">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione.
+              His dedication to his craft has earned him recognition and
+              opportunities internationally through the participation in modern
+              classical music festivals/workshops.
             </p>
           </div>
         </div>

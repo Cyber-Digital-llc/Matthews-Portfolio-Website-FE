@@ -37,17 +37,14 @@ export default function Home() {
                 </div>
             </main>
             <ScrollToTopButton />
-            <footer className='w-full flex items-center justify-center align-center bg-[rgb(63,10,10)] '>
+            <footer className='full flex items-center justify-center align-center bg-[rgb(63,10,10)] '>
                 <a
                     href='https://cyberdigitalllc.com'
                     target='_blank'
                     rel='noopener noreferrer'
                 >
                     Created by{" "}
-                    <div
-                        className='flex
-                    '
-                    >
+                    <div className='flex'>
                         <h2 className='flex flex-row'>Cyber Digital, llc</h2>
                     </div>
                 </a>
