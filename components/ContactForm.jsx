@@ -49,7 +49,7 @@ export default function ContactForm() {
             <div className="flex flex-wrap -mx-3 mb-6">
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 <label
-                  className="block uppercase tracking-wide text-teal-700 text-xs font-bold mb-2"
+                  className="block uppercase tracking-wide text-white text-xs font-bold mb-2"
                   htmlFor="first-name"
                 >
                   First Name
@@ -67,7 +67,7 @@ export default function ContactForm() {
               </div>
               <div className="w-full md:w-1/2 px-3">
                 <label
-                  className="block uppercase tracking-wide text-teal-700 text-xs font-bold mb-2"
+                  className="block uppercase tracking-wide text-white text-xs font-bold mb-2"
                   htmlFor="last-name"
                 >
                   Last Name
@@ -87,7 +87,7 @@ export default function ContactForm() {
             <div className="flex flex-wrap -mx-3 mb-6">
               <div className="w-full px-3">
                 <label
-                  className="block uppercase tracking-wide text-teal-700 text-xs font-bold mb-2"
+                  className="block uppercase tracking-wide text-white text-xs font-bold mb-2"
                   htmlFor="email"
                 >
                   E-mail
@@ -106,7 +106,7 @@ export default function ContactForm() {
             <div className="flex flex-wrap -mx-3 mb-6">
               <div className="w-full px-3">
                 <label
-                  className="block uppercase tracking-wide text-teal-700  text-xs font-bold mb-2"
+                  className="block uppercase tracking-wide text-white  text-xs font-bold mb-2"
                   htmlFor="message"
                 >
                   Message
