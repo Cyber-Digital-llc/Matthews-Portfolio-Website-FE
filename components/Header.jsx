@@ -1,34 +1,59 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Trail } from './Trail'
 import styles from '../styles/Header.module.css'
 
 const Header = () => {
   const [open, set] = useState(true)
+  const [isVisible, setIsVisible] = useState(false)
+
+  useEffect(() => {
+    setIsVisible(true)
+  }, [])
+
   return (
-    // <>
     <div
       id="home"
-      className=" w-[100vw] px-10 bg-fixed bg-contain bg-no-repeat lg:bg-cover 2xl:bg-cover bg-center md:bg-fixed md:w-[100vw] xl:h-[97vh] mx-auto flex items-center justify-center flex-col lg:bg-fixed lg:items-center md:h-screen md:max-h-[1198px] min-h-[676px] sm:bg-fixed sm:min-h-[724px] md:min-h-[828px] 2xl:bg-fixed 2xl:min-h-[940px] 2xl:h-[800px] scrollbar-hide relative overflow-y-auto overflow-x-hidden md:overflow-x-visible md:overflow-y-visible"
+      className="relative w-full min-h-screen bg-headerBGI bg-cover bg-center bg-fixed bg-no-repeat flex items-center justify-center overflow-hidden"
     >
-      {/* //     <div className="flex-col">
-    //       <h1 className="font-bold text-8xl pt-2 text-[32px] sm:text-6xl xl:text-8xl my-8 mb-2 md:mt-10 md:my-12 md:mb-6 ">
-    //         Matthew Hernandez
-    //       </h1>
-    //       <h3 className="text-6xl">FILM/GAME COMPOSER</h3>
-    //     </div>
-    //    */}
-      {/* // </> */}
-      <div className="flex" onClick={() => set((state) => !state)}>
-        <Trail open={open}>
-          <span className="flex font-bold text-6xl pb-6 md:pb-0 lg:pb-0 xl:pb-0 sm:text-6xl xl:text-8xl 2xl:text-9xl md:mb-3">
-            Matthew Hernandez
-          </span>
-          <div className="">
-            <span className="flex text-2xl pt-9 md:pb-0 lg:py-0 xl:pb-0 2xl:pt-8 sm:text-5xl xl:text-8xl md:mb-6">
-              Film | Game Composer
+      {/* Premium overlay with gradient */}
+      <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-black/40 to-burgundy-950/30"></div>
+      
+      {/* Animated background particles effect */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-burgundy-950/30 rounded-full animate-pulse"></div>
+        <div className="absolute top-3/4 right-1/3 w-1 h-1 bg-cream/20 rounded-full animate-pulse delay-1000"></div>
+        <div className="absolute top-1/2 right-1/4 w-1.5 h-1.5 bg-burgundy-950/20 rounded-full animate-pulse delay-500"></div>
+      </div>
+
+      {/* Main content */}
+      <div className={`relative z-10 text-center px-6 md:px-12 lg:px-20 ${isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
+        <div className="flex flex-col items-center" onClick={() => set((state) => !state)}>
+          <Trail open={open}>
+            <span className="font-display font-bold text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-cream leading-tight tracking-tight mb-4 md:mb-6">
+              Matthew Hernandez
             </span>
+            <div className="mt-4 md:mt-6">
+              <span className="font-body font-light text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-cream/90 tracking-wider uppercase">
+                Film | Game Composer
+              </span>
+            </div>
+          </Trail>
+        </div>
+
+        {/* Premium subtitle */}
+        <div className={`mt-8 md:mt-12 ${isVisible ? 'animate-fade-in-up' : 'opacity-0'}`} style={{animationDelay: '0.5s'}}>
+          <p className="font-body text-sm sm:text-base md:text-lg text-cream/70 max-w-2xl mx-auto leading-relaxed">
+            Crafting immersive musical experiences for visual storytelling
+          </p>
+        </div>
+
+        {/* Scroll indicator */}
+        <div className={`absolute bottom-8 left-1/2 transform -translate-x-1/2 ${isVisible ? 'animate-fade-in' : 'opacity-0'}`} style={{animationDelay: '1s'}}>
+          <div className="flex flex-col items-center space-y-2">
+            <span className="font-body text-xs text-cream/50 uppercase tracking-wider">Scroll</span>
+            <div className="w-px h-8 bg-gradient-to-b from-burgundy-950 to-transparent"></div>
           </div>
-        </Trail>
+        </div>
       </div>
     </div>
   )

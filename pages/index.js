@@ -5,56 +5,69 @@ import Header from "../components/Header";
 import styles from "../styles/Home.module.css";
 import Credits from "../components/Credits";
 import Music from "../components/Music";
-// import Contact from "../components/Contact";
 import GlobalNavBar from "../components/GlobalNavbar";
 import ContactForm from "../components/ContactForm";
 import MobileNav from "../components/MobileNav";
 import ScrollToTopButton from "../components/ScrollToTopButton";
-import heroBG from "../public/heroBGcopy.jpg";
-
-// relative px-10 bg-no-repeat bg-fit bg-fixed bg-cover h-auto lg:bg-cover 2xl:bg-cover bg-center bg-headerBGI md:bg-fixed w-[100vw] mx-auto flex items-center justify-center flex-col scrollbar-hide  overflow-y-auto overflow-x-hidden md:overflow-x-visible md:overflow-y-visible
 
 export default function Home() {
     return (
-        <div className=' relative px-10 bg-no-repeat bg-fit bg-fixed bg-cover h-auto lg:bg-cover 2xl:bg-cover bg-center md:bg-fixed w-[100vw] mx-auto flex items-center justify-center flex-col scrollbar-hide  overflow-y-auto overflow-x-hidden md:overflow-x-visible md:overflow-y-visible'>
-            {/* <div className='static z-20'> */}
+        <div className="relative min-h-screen bg-black overflow-x-hidden">
             <Head>
-                <title>Matthew Hernandez</title>
-                <meta name='description' content='Film & Game Composer' />
-                <link rel='icon' href='/favicon.ico' />
+                <title>Matthew Hernandez - Film & Game Composer</title>
+                <meta name="description" content="Matthew Hernandez is a promising young composer from Los Angeles, specializing in film and game music composition." />
+                <meta name="keywords" content="composer, film music, game music, Matthew Hernandez, Los Angeles" />
+                <meta name="author" content="Matthew Hernandez" />
+                <meta property="og:title" content="Matthew Hernandez - Film & Game Composer" />
+                <meta property="og:description" content="Crafting immersive musical experiences for visual storytelling" />
+                <meta property="og:type" content="website" />
+                <link rel="icon" href="/favicon.ico" />
+                <link rel="preconnect" href="https://fonts.googleapis.com" />
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
             </Head>
 
-            <main className='relative z-[2]'>
-                <div className=''>
-                    <MobileNav />
-                    {/* <GlobalNavBar /> */}
-                    <Header />
-                    <About />
-                    <Credits />
-                    <Music />
-                    {/* <Contact /> */}
-                    <ContactForm />
-                </div>
+            {/* Navigation */}
+            <MobileNav />
+            {/* <GlobalNavBar /> */}
+
+            {/* Main Content */}
+            <main className="relative">
+                <Header />
+                <About />
+                <Credits />
+                <Music />
+                <ContactForm />
             </main>
+
+            {/* Scroll to top button */}
             <ScrollToTopButton />
-            <footer className='w-[100vw] flex items-center justify-center align-center bg-[rgb(63,10,10)] '>
-                <div className='flex flex-row justify-center items-center'>
-                    <a
-                        className='flex flex-row justify-center items-center text-[#f5f5f5] text-[.9rem] font-bold hover:text-[#f5f5f5]'
-                        href='https://joethernandez.com'
-                        target='_blank'
-                        rel='noopener noreferrer'
-                    >
-                        <span className='font-light text-sm'>
-                            Created by&nbsp;{" "}
-                        </span>
-                        <div className='flex'>
-                            <h2 className='flex flex-row'>Cyber Digital</h2>
+
+            {/* Premium Footer */}
+            <footer className="relative bg-gradient-to-r from-burgundy-950 to-black py-8 border-t border-burgundy-950/30">
+                <div className="max-w-6xl mx-auto px-8">
+                    <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                        <div className="text-center md:text-left">
+                            <p className="font-body text-cream/70 text-sm">
+                                © 2025 Matthew Hernandez. All rights reserved.
+                            </p>
                         </div>
-                    </a>
+                        
+                        <div className="flex items-center space-x-6">
+                            <a
+                                href="https://joethernandez.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="group flex items-center space-x-2 text-cream/70 hover:text-cream transition-colors duration-300"
+                            >
+                                <span className="font-body text-sm">Created by</span>
+                                <span className="font-body font-medium text-cream group-hover:text-burgundy-950 transition-colors duration-300">
+                                    Cyber Digital
+                                </span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </footer>
-            {/* </div> */}
         </div>
     );
 }
