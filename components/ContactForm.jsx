@@ -34,19 +34,38 @@ export default function ContactForm() {
 
   function onSubmit(data) {
     setIsSubmitted(true)
+    setSuccessMessage('') // Clear any previous messages
+    
     axios
-      .post('/api/contact', data)
-      .then((response) => {
-        console.log('response', response)
-        console.log(data)
-        setSuccessMessage(
-          `Thank you for your message! I'll get back to you as soon as possible. Check your inbox for updates. 😊`,
-        )
-        reset()
+      .post('/api/contact', data, {
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        timeout: 10000, // 10 second timeout
       })
-      .catch((e) => {
-        console.error(e)
-        setSuccessMessage('Sorry, there was an error sending your message. Please try again.')
+      .then((response) => {
+        console.log('Contact form response:', response)
+        if (response.data.success) {
+          setSuccessMessage(
+            `Thank you for your message! I'll get back to you as soon as possible. Check your inbox for updates. 😊`,
+          )
+          reset()
+        } else {
+          setSuccessMessage(response.data.message || 'Sorry, there was an error sending your message. Please try again.')
+        }
+      })
+      .catch((error) => {
+        console.error('Contact form error:', error)
+        if (error.response) {
+          // Server responded with error status
+          setSuccessMessage(error.response.data?.message || 'Sorry, there was an error sending your message. Please try again.')
+        } else if (error.request) {
+          // Request was made but no response received
+          setSuccessMessage('Network error. Please check your connection and try again.')
+        } else {
+          // Something else happened
+          setSuccessMessage('Sorry, there was an error sending your message. Please try again.')
+        }
       })
       .finally(() => {
         setIsSubmitted(false)
