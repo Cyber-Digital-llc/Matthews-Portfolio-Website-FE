@@ -31,7 +31,14 @@ const About = () => {
       
       {/* Left side - Image */}
       <div className="relative lg:w-1/2 h-96 lg:h-auto">
-        <div className="absolute inset-0 bg-headShotBGI bg-cover bg-center bg-no-repeat"></div>
+        <div 
+          className="absolute inset-0 bg-headShotBGI bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundPosition: 'center center',
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat'
+          }}
+        ></div>
         <div className="absolute inset-0 bg-gradient-to-r from-black/20 to-transparent lg:from-black/40"></div>
         
         {/* Subtle overlay for premium effect */}

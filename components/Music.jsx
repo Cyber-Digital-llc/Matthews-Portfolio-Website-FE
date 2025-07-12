@@ -32,7 +32,14 @@ const Music = () => {
       
       {/* Left side - Background Image */}
       <div className="relative lg:w-1/2 h-96 lg:h-auto">
-        <div className="absolute inset-0 bg-musicBGI bg-cover bg-center bg-no-repeat"></div>
+        <div 
+          className="absolute inset-0 bg-musicBGI bg-cover bg-center bg-no-repeat md:bg-fixed"
+          style={{
+            backgroundPosition: 'center center',
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat'
+          }}
+        ></div>
         <div className="absolute inset-0 bg-gradient-to-l from-black/30 to-transparent lg:from-black/50"></div>
         
         {/* Subtle overlay for premium effect */}
