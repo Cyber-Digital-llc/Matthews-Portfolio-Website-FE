@@ -12,6 +12,7 @@ export default function ContactForm() {
 
   const [successMessage, setSuccessMessage] = useState('')
   const [isVisible, setIsVisible] = useState(false)
+  const [isSubmitted, setIsSubmitted] = useState(false)
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -32,17 +33,24 @@ export default function ContactForm() {
   }, [])
 
   function onSubmit(data) {
+    setIsSubmitted(true)
     axios
       .post('/api/contact', data)
       .then((response) => {
         console.log('response', response)
         console.log(data)
         setSuccessMessage(
-          `Thanks for contacting me! I'll reach back ASAP, look in your inbox for updates 😊`,
+          `Thank you for your message! I'll get back to you as soon as possible. Check your inbox for updates. 😊`,
         )
+        reset()
       })
-      .catch((e) => console.error(e))
-      .finally(reset())
+      .catch((e) => {
+        console.error(e)
+        setSuccessMessage('Sorry, there was an error sending your message. Please try again.')
+      })
+      .finally(() => {
+        setIsSubmitted(false)
+      })
   }
 
   return (
@@ -97,12 +105,27 @@ export default function ContactForm() {
               </div>
             </div>
 
-            {/* Success message */}
-                         {successMessage && (
-               <div className="p-6 bg-black/80 backdrop-blur-sm rounded-lg border border-burgundy-950/30">
-                 <p className="font-body text-cream text-center">{successMessage}</p>
-               </div>
-             )}
+                        {/* Success/Error message */}
+            {successMessage && (
+              <div className={`p-6 rounded-lg border transition-all duration-500 ${
+                successMessage.includes('error') 
+                  ? 'bg-red-900/20 border-red-500/30' 
+                  : 'bg-green-900/20 border-green-500/30'
+              }`}>
+                <div className="flex items-center justify-center space-x-3">
+                  {successMessage.includes('error') ? (
+                    <svg className="w-5 h-5 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  ) : (
+                    <svg className="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  )}
+                  <p className="font-body text-cream text-center">{successMessage}</p>
+                </div>
+              </div>
+            )}
           </div>
 
           {/* Contact Form */}
@@ -182,7 +205,7 @@ export default function ContactForm() {
               <div className="pt-4">
                 <button
                   type="submit"
-                  disabled={isSubmitting}
+                  disabled={isSubmitting || isSubmitted}
                   className="group relative w-full px-8 py-4 bg-gradient-to-r from-burgundy-950 to-burgundy-900 hover:from-burgundy-900 hover:to-burgundy-950 text-cream font-body font-medium text-sm uppercase tracking-wider rounded-lg transition-all duration-300 hover-lift hover-glow disabled:opacity-50 disabled:cursor-not-allowed overflow-hidden"
                 >
                   <span className="relative z-10 flex items-center justify-center space-x-2">
@@ -190,6 +213,13 @@ export default function ContactForm() {
                       <>
                         <div className="w-4 h-4 border-2 border-cream/30 border-t-cream rounded-full animate-spin"></div>
                         <span>Submitting...</span>
+                      </>
+                    ) : isSubmitted && successMessage && !successMessage.includes('error') ? (
+                      <>
+                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <span>Message Sent!</span>
                       </>
                     ) : (
                       <>
