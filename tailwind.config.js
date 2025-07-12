@@ -35,6 +35,10 @@ module.exports = {
                 'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
                 'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
             },
+            backgroundSize: {
+                'mobile-cover': 'cover',
+                'mobile-contain': 'contain',
+            },
             animation: {
                 'fade-in': 'fadeIn 0.8s ease-out',
                 'fade-in-up': 'fadeInUp 0.8s ease-out',

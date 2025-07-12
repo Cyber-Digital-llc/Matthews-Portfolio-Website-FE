@@ -13,7 +13,12 @@ const Header = () => {
   return (
     <div
       id="home"
-      className="relative w-full min-h-screen bg-headerBGI bg-cover bg-center bg-fixed bg-no-repeat flex items-center justify-center overflow-hidden"
+      className="relative w-full min-h-screen bg-headerBGI bg-cover bg-center bg-no-repeat md:bg-fixed flex items-center justify-center overflow-hidden"
+      style={{
+        backgroundPosition: 'center center',
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat'
+      }}
     >
       {/* Premium overlay with gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-black/40 to-burgundy-950/30"></div>
@@ -50,7 +55,6 @@ const Header = () => {
         {/* Scroll indicator */}
         <div className={`absolute bottom-8 left-1/2 transform -translate-x-1/2 ${isVisible ? 'animate-fade-in' : 'opacity-0'}`} style={{animationDelay: '1s'}}>
           <div className="flex flex-col items-center space-y-2">
-            <span className="font-body text-xs text-cream/50 uppercase tracking-wider">Scroll</span>
             <div className="w-px h-8 bg-gradient-to-b from-burgundy-950 to-transparent"></div>
           </div>
         </div>
